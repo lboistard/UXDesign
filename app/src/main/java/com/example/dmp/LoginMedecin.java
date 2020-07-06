@@ -45,10 +45,13 @@ public class LoginMedecin extends AppCompatActivity {
     }
 
     //~-------------------------------------------------
-    //~ Method that link to the "Patient login page"
+    //~ Method that link to the "User login page"
     //~-------------------------------------------------
     public void toPatient(View view) {
         Intent intent = new Intent(LoginMedecin.this, MainActivity.class);
         startActivity(intent);
     }
+
+
+
 }

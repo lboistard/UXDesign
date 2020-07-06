@@ -86,6 +86,7 @@ tools:context=".MainActivity">
         android:backgroundTint="#C8332786"
         android:duplicateParentState="true"
         android:fontFamily="@font/muli"
+        android:onClick="toCreateAccount"
         android:text="Creation de compte"
         android:textColor="#FFFFFF" />
 

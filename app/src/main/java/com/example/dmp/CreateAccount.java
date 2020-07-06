@@ -54,19 +54,6 @@ public class CreateAccount extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
         createAccountComponents();
-
-        DBPatient dbUser = new DBPatient(this);
-
-        User user = new User("Lucas","Boistard","test","empty");
-
-        dbUser.open();
-        dbUser.insertUser(user);
-
-        //on extrait le livre de la BDD grâce au titre du livre que l'on a créé précédemment
-        User userFromDb = dbUser.getUserFromDB("Boistard");
-
-        emailUser.setText(userFromDb.getNom());
-
     }
 
     //~-------------------------------------------------

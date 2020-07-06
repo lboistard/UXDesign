@@ -1,20 +1,31 @@
 package com.example.dmp.User;
 
-public class Patient {
+/**
+ * Création d'un objet patient
+ * @author Lucas
+ */
+public class User {
     private int id;
     private String prenom;
     private String nom;
     private String password;
+    private String CPS;
 
-    public Patient(){}
+    public User(){}
 
-
-    public Patient(String prenom, String nom, String password){
+    //~-------------------------------------------------------
+    //~ Constructor
+    //~-------------------------------------------------------
+    public User(String prenom, String nom, String password, String CPS){
         this.prenom = prenom;
         this.nom = nom;
         this.password = password;
+        this.CPS = CPS;
     }
 
+    //~-------------------------------------------------------
+    //~ Getters and Setters
+    //~-------------------------------------------------------
     public int getId() {
         return id;
     }
@@ -47,12 +58,23 @@ public class Patient {
         this.password = password;
     }
 
+    public String getCPS(){
+        return CPS;
+    }
+
+    public void setCPS(String CPS){
+        this.CPS = CPS;
+    }
+    //~-------------------------------------------------------
+    //~ toString()
+    //~-------------------------------------------------------
     @Override
     public String toString() {
-        return "Patient{" +
+        return "User{" +
                 ", prenom='" + prenom + '\'' +
                 ", nom='" + nom + '\'' +
                 ", password ='" + password + '\'' +
+                ", CPS = '" + CPS + '\'' +
                 '}';
     }
 }

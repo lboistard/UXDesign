@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".LoginMedecin">
+    tools:context=".CreateAccount">
 
 
     <TextView
@@ -27,7 +27,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="68dp"
-        app:srcCompat="@drawable/createAccount" />
+        app:srcCompat="@drawable/createaccount" />
 
     <EditText
         android:id="@+id/emailUser"
@@ -99,6 +99,7 @@
         android:duplicateParentState="true"
         android:fontFamily="@font/muli"
         android:text="Créer"
+        android:onClick="createAccount"
         android:textColor="#FFFFFF" />
 
     <LinearLayout

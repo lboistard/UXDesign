@@ -54,4 +54,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, LoginMedecin.class);
         startActivity(intent);
     }
+
+    //~-------------------------------------------------
+    //~ Method that link to the "Create account page"
+    //~-------------------------------------------------
+    public void toCreateAccount(View view){
+        Intent intent = new Intent(MainActivity.this, CreateAccount.class);
+        startActivity(intent);
+    }
 }
