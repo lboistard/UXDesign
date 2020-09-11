@@ -5,6 +5,7 @@ package com.example.dmp.User;
  * @author Lucas
  */
 public class User {
+
     private int id;
     private String prenom;
     private String nom;

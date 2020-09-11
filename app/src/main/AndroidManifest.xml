@@ -11,9 +11,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".CreateAccount" />
         <activity android:name=".LoginMedecin" />
-        <activity
-            android:name=".ui.login.LoginActivity"
-            android:label="@string/title_activity_login" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

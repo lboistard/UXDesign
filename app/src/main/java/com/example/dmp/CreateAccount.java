@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 import android.os.Bundle;
+import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,6 +17,12 @@ import com.example.dmp.User.User;
 import com.example.dmp.database.DBPatient;
 import com.example.dmp.database.DBUser;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class CreateAccount extends AppCompatActivity {
 
 
@@ -26,8 +33,10 @@ public class CreateAccount extends AppCompatActivity {
     ImageView logoCreateAccount;
     EditText emailUser, passwordUser,passwordAgainUser;
     Button createAccountButton;
-    RadioButton particlierButton, professionelSanteButton;
+    RadioButton particulierButton, professionelSanteButton;
 
+
+    private static FileWriter file;
     //~-------------------------------------------------
     //~ Window components attribution
     //~-------------------------------------------------
@@ -41,7 +50,7 @@ public class CreateAccount extends AppCompatActivity {
 		passwordUser = findViewById(R.id.passwordUser);
 		passwordAgainUser = findViewById(R.id.passwordAgainUser);
 		createAccountButton = findViewById(R.id.createAccountButton);
-		particlierButton = findViewById(R.id.particlierButton);
+        particulierButton = findViewById(R.id.particulierButton);
 		professionelSanteButton = findViewById(R.id.professionelSanteButton);
 
     }
@@ -62,7 +71,30 @@ public class CreateAccount extends AppCompatActivity {
     public void createAccount(View view) {
         String username = emailUser.getText().toString();
         String password = passwordUser.getText().toString();
+        String type= particulierButton.getText().toString();
+
+        addPatientToJson();
+
 
     }
+
+    public void addPatientToJson() {
+
+        JSONObject obj = new JSONObject();
+
+        try {
+            obj.put("name", "foo");
+            obj.put("num", new Integer(100));
+            obj.put("balance", new Double(1000.21));
+            obj.put("is_vip", new Boolean(true));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println(obj.toString());
+
+    }
+
 }
+
 
