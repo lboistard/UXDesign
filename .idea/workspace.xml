@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="74cfe643-94fa-4396-b8d9-118c732f15c5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_API_29" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+        <option value="resourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1e8EY1lNa1biT1Q4T2omm9lxD8l" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1599816473526" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.packageName">
+      <recent name="com.example.dmp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74cfe643-94fa-4396-b8d9-118c732f15c5" name="Default Changelist" comment="" />
+      <created>1593694863853</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593694863853</updated>
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1593779144024</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593779144024</updated>
+    </task>
+    <task id="LOCAL-00002" summary="rename components in res/drawable/activity_create_account">
+      <created>1593779742472</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593779742472</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init components in the createAccount class">
+      <created>1593780100075</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593780100075</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add database creation for user">
+      <created>1593781949628</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1593781949628</updated>
+    </task>
+    <task id="LOCAL-00005" summary="create User package and Patient class">
+      <created>1594044169062</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1594044169062</updated>
+    </task>
+    <task id="LOCAL-00006" summary="link main activity to &quot;create an account&quot;">
+      <created>1594047102693</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1594047102693</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add database management for user">
+      <created>1594047325894</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1594047325894</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add gitignore">
+      <created>1599827163956</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1599827163957</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="rename components in res/drawable/activity_create_account" />
+    <MESSAGE value="init components in the createAccount class" />
+    <MESSAGE value="add database creation for user" />
+    <MESSAGE value="create User package and Patient class" />
+    <MESSAGE value="link main activity to &quot;create an account&quot;" />
+    <MESSAGE value="add database management for user" />
+    <MESSAGE value="add gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gitignore" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="413" y="71" key="#DMP" timestamp="1599816404093">
+      <screen x="0" y="25" width="1440" height="822" />
+    </state>
+    <state x="413" y="71" key="#DMP/0.25.1440.822@0.25.1440.822" timestamp="1599816404093" />
+    <state x="245" y="178" key="#PSD" timestamp="1599471997974">
+      <screen x="0" y="25" width="1440" height="822" />
+    </state>
+    <state x="245" y="177" key="#PSD/0.23.1440.830@0.23.1440.830" timestamp="1597671800382" />
+    <state x="245" y="178" key="#PSD/0.25.1440.822@0.25.1440.822" timestamp="1599471997974" />
+    <state x="184" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599826800949">
+      <screen x="0" y="25" width="1440" height="822" />
+    </state>
+    <state x="184" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.822@0.25.1440.822" timestamp="1599826800949" />
+    <state x="339" y="36" key="CommitChangelistDialog2" timestamp="1599827163587">
+      <screen x="0" y="25" width="1440" height="822" />
+    </state>
+    <state x="339" y="36" key="CommitChangelistDialog2/0.25.1440.822@0.25.1440.822" timestamp="1599827163587" />
+    <state width="1358" height="154" key="GridCell.Tab.0.bottom" timestamp="1599817835568">
+      <screen x="0" y="25" width="1440" height="822" />
+    </state>
+    <state width="1358" height="154" key="GridCell.Tab.0.bottom/0.25.1440.822@0.25.1440.822" timestamp="1599817835568" />
+    <state width="1358" height="154" key="GridCell.Tab.0.center" timestamp="1599817835567">
+      <screen x="0" y="25" width="1440" height="822" />
+    </state>
+    <state width="1358" height="154" key="GridCell.Tab.0.center/0.25.1440.822@0.25.1440.822" timestamp="1599817835567" />
+    <state width="1358" height="154" key="GridCell.Tab.0.left" timestamp="1599817835567">
+      <screen x="0" y="25" width="1440" height="822" />
+    </state>
+    <state width="1358" height="154" key="GridCell.Tab.0.left/0.25.1440.822@0.25.1440.822" timestamp="1599817835567" />
+    <state width="1358" height="154" key="GridCell.Tab.0.right" timestamp="1599817835568">
+      <screen x="0" y="25" width="1440" height="822" />
+    </state>
+    <state width="1358" height="154" key="GridCell.Tab.0.right/0.25.1440.822@0.25.1440.822" timestamp="1599817835568" />
+    <state x="320" y="173" key="Vcs.Push.Dialog.v2" timestamp="1599827168729">
+      <screen x="0" y="25" width="1440" height="822" />
+    </state>
+    <state x="320" y="173" key="Vcs.Push.Dialog.v2/0.25.1440.822@0.25.1440.822" timestamp="1599827168729" />
+    <state x="409" y="230" key="git4idea.merge.GitPullDialog" timestamp="1599816230671">
+      <screen x="0" y="25" width="1440" height="822" />
+    </state>
+    <state x="409" y="230" key="git4idea.merge.GitPullDialog/0.25.1440.822@0.25.1440.822" timestamp="1599816230671" />
+  </component>
+</project>
