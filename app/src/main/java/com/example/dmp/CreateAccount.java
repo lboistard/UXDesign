@@ -3,7 +3,8 @@ package com.example.dmp;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Display;
 import android.view.View;
@@ -17,11 +18,13 @@ import com.example.dmp.User.User;
 import com.example.dmp.database.DBPatient;
 import com.example.dmp.database.DBUser;
 
+
 import org.json.JSONException;
-import org.json.JSONObject;
+
 
 import java.io.FileWriter;
-import java.io.IOException;
+
+import android.content.Context;
 
 public class CreateAccount extends AppCompatActivity {
 
@@ -36,7 +39,9 @@ public class CreateAccount extends AppCompatActivity {
     RadioButton particulierButton, professionelSanteButton;
 
 
-    private static FileWriter file;
+
+
+
     //~-------------------------------------------------
     //~ Window components attribution
     //~-------------------------------------------------
@@ -68,7 +73,7 @@ public class CreateAccount extends AppCompatActivity {
     //~-------------------------------------------------
     //~ Account Creation, connect to database
     //~-------------------------------------------------
-    public void createAccount(View view) {
+    public void createAccount(View view) throws JSONException {
         String username = emailUser.getText().toString();
         String password = passwordUser.getText().toString();
         String type= particulierButton.getText().toString();
@@ -78,23 +83,10 @@ public class CreateAccount extends AppCompatActivity {
 
     }
 
-    public void addPatientToJson() {
+    public void addPatientToJson(){
 
-        JSONObject obj = new JSONObject();
-
-        try {
-            obj.put("name", "foo");
-            obj.put("num", new Integer(100));
-            obj.put("balance", new Double(1000.21));
-            obj.put("is_vip", new Boolean(true));
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-
-        System.out.println(obj.toString());
 
     }
-
 }
 
 

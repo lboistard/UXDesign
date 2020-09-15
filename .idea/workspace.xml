@@ -9,7 +9,24 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74cfe643-94fa-4396-b8d9-118c732f15c5" name="Default Changelist" comment="" />
+    <list default="true" id="74cfe643-94fa-4396-b8d9-118c732f15c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/users.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/AccueilPatient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_accueil_patient.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/CreateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/CreateAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/jsonFiles/users.json" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +63,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1e8EY1lNa1biT1Q4T2omm9lxD8l" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -55,17 +74,21 @@
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java" />
-    <property name="memory.settings.postsync.last.time.stamp" value="1599816473526" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1600172624647" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="memory.settings" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
       <recent name="com.example.dmp" />
     </key>
+    <key name="android.template.-750740034">
+      <recent name="com.example.dmp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/assets" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
     </key>
   </component>
@@ -145,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599827163957</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add git ignore">
+      <created>1599827235848</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1599827235848</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,7 +200,8 @@
     <MESSAGE value="link main activity to &quot;create an account&quot;" />
     <MESSAGE value="add database management for user" />
     <MESSAGE value="add gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gitignore" />
+    <MESSAGE value="add git ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add git ignore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="71" key="#DMP" timestamp="1599816404093">
@@ -186,33 +217,37 @@
       <screen x="0" y="25" width="1440" height="822" />
     </state>
     <state x="184" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.822@0.25.1440.822" timestamp="1599826800949" />
-    <state x="339" y="36" key="CommitChangelistDialog2" timestamp="1599827163587">
+    <state x="428" y="243" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600173280724">
       <screen x="0" y="25" width="1440" height="822" />
     </state>
-    <state x="339" y="36" key="CommitChangelistDialog2/0.25.1440.822@0.25.1440.822" timestamp="1599827163587" />
-    <state width="1358" height="154" key="GridCell.Tab.0.bottom" timestamp="1599817835568">
+    <state x="428" y="243" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.822@0.25.1440.822" timestamp="1600173280724" />
+    <state x="339" y="36" key="CommitChangelistDialog2" timestamp="1599827235655">
       <screen x="0" y="25" width="1440" height="822" />
     </state>
-    <state width="1358" height="154" key="GridCell.Tab.0.bottom/0.25.1440.822@0.25.1440.822" timestamp="1599817835568" />
-    <state width="1358" height="154" key="GridCell.Tab.0.center" timestamp="1599817835567">
+    <state x="339" y="36" key="CommitChangelistDialog2/0.25.1440.822@0.25.1440.822" timestamp="1599827235655" />
+    <state width="1358" height="107" key="GridCell.Tab.0.bottom" timestamp="1600172857222">
       <screen x="0" y="25" width="1440" height="822" />
     </state>
-    <state width="1358" height="154" key="GridCell.Tab.0.center/0.25.1440.822@0.25.1440.822" timestamp="1599817835567" />
-    <state width="1358" height="154" key="GridCell.Tab.0.left" timestamp="1599817835567">
+    <state width="1358" height="107" key="GridCell.Tab.0.bottom/0.25.1440.822@0.25.1440.822" timestamp="1600172857222" />
+    <state width="1358" height="107" key="GridCell.Tab.0.center" timestamp="1600172857221">
       <screen x="0" y="25" width="1440" height="822" />
     </state>
-    <state width="1358" height="154" key="GridCell.Tab.0.left/0.25.1440.822@0.25.1440.822" timestamp="1599817835567" />
-    <state width="1358" height="154" key="GridCell.Tab.0.right" timestamp="1599817835568">
+    <state width="1358" height="107" key="GridCell.Tab.0.center/0.25.1440.822@0.25.1440.822" timestamp="1600172857221" />
+    <state width="1358" height="107" key="GridCell.Tab.0.left" timestamp="1600172857220">
       <screen x="0" y="25" width="1440" height="822" />
     </state>
-    <state width="1358" height="154" key="GridCell.Tab.0.right/0.25.1440.822@0.25.1440.822" timestamp="1599817835568" />
-    <state x="320" y="173" key="Vcs.Push.Dialog.v2" timestamp="1599827168729">
+    <state width="1358" height="107" key="GridCell.Tab.0.left/0.25.1440.822@0.25.1440.822" timestamp="1600172857220" />
+    <state width="1358" height="107" key="GridCell.Tab.0.right" timestamp="1600172857221">
       <screen x="0" y="25" width="1440" height="822" />
     </state>
-    <state x="320" y="173" key="Vcs.Push.Dialog.v2/0.25.1440.822@0.25.1440.822" timestamp="1599827168729" />
-    <state x="409" y="230" key="git4idea.merge.GitPullDialog" timestamp="1599816230671">
+    <state width="1358" height="107" key="GridCell.Tab.0.right/0.25.1440.822@0.25.1440.822" timestamp="1600172857221" />
+    <state x="320" y="173" key="Vcs.Push.Dialog.v2" timestamp="1599827243274">
       <screen x="0" y="25" width="1440" height="822" />
     </state>
-    <state x="409" y="230" key="git4idea.merge.GitPullDialog/0.25.1440.822@0.25.1440.822" timestamp="1599816230671" />
+    <state x="320" y="173" key="Vcs.Push.Dialog.v2/0.25.1440.822@0.25.1440.822" timestamp="1599827243274" />
+    <state x="409" y="230" key="git4idea.merge.GitPullDialog" timestamp="1600172571537">
+      <screen x="0" y="25" width="1440" height="822" />
+    </state>
+    <state x="409" y="230" key="git4idea.merge.GitPullDialog/0.25.1440.822@0.25.1440.822" timestamp="1600172571537" />
   </component>
 </project>
