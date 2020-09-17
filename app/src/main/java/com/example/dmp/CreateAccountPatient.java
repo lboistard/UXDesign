@@ -56,15 +56,12 @@ public class CreateAccountPatient extends AppCompatActivity {
     public void createAccountComponents(){
         createAccountTextView = findViewById(R.id.createAccountTextView);
 		confirmPasswordTextView = findViewById(R.id.confirmPasswordTextView);
-		statutTextView = findViewById(R.id.statutTextView);
-		ifProfessionelTextView = findViewById(R.id.ifProfessionelTextView);
+
 		logoCreateAccount = findViewById(R.id.logoCreateAccount);
 		emailUser = findViewById(R.id.emailUser);
 		passwordUser = findViewById(R.id.passwordUser);
 		passwordAgainUser = findViewById(R.id.passwordAgainUser);
 		createAccountButton = findViewById(R.id.createAccountButton);
-        particulierButton = findViewById(R.id.particulierButton);
-		professionelSanteButton = findViewById(R.id.professionelSanteButton);
 
     }
 

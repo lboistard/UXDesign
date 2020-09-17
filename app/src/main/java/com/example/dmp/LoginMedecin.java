@@ -51,7 +51,4 @@ public class LoginMedecin extends AppCompatActivity {
         Intent intent = new Intent(LoginMedecin.this, MainActivity.class);
         startActivity(intent);
     }
-
-
-
 }
