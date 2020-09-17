@@ -1,11 +1,11 @@
-package com.example.dmp.database;
+package com.example.dmp.Database;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 
-public class DatabaseHelper extends SQLiteOpenHelper {
+public class DatabasePatient extends SQLiteOpenHelper {
 
 
     //~-------------------------------------------------
@@ -24,7 +24,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     //~-------------------------------------------------
     //~ DATABASE INFORMATIONS
     //~-------------------------------------------------
-    static final String DB_NAME = "assets/users.db";
+    static final String DB_NAME = "users.db";
     static final int DB_VERSION = 1;
 
     //~-------------------------------------------------
@@ -40,7 +40,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     //~-------------------------------------------------
     //~
     //~-------------------------------------------------
-    public DatabaseHelper(Context context) {
+    public DatabasePatient(Context context) {
+
         super(context, DB_NAME, null, DB_VERSION);
     }
 

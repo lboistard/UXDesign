@@ -1,5 +1,5 @@
 
-package com.example.dmp.database;
+package com.example.dmp.Database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -7,14 +7,12 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.example.dmp.database.DatabaseHelper;
-
 public class DBManager {
 
     //~-------------------------------------------------
     //~ CLOSE THE DB
     //~-------------------------------------------------
-	private DatabaseHelper dbHelper;
+	private DatabasePatient dbHelper;
 	private Context context;
 	private SQLiteDatabase database;
 
@@ -30,7 +28,7 @@ public class DBManager {
     //~
     //~-------------------------------------------------
 	public DBManager open() throws SQLException {
-		dbHelper = new DatabaseHelper(context);
+		dbHelper = new DatabasePatient(context);
 		database = dbHelper.getWritableDatabase();
 		return this;
 	}
@@ -48,11 +46,11 @@ public class DBManager {
 	public void insert(String email, String password, String numSecu) {
 		ContentValues contentValue = new ContentValues();
 
-		contentValue.put(DatabaseHelper.EMAIL, email);
-		contentValue.put(DatabaseHelper.PASSWORD, password);
-		contentValue.put(DatabaseHelper.NUMSECU, numSecu);
+		contentValue.put(DatabasePatient.EMAIL, email);
+		contentValue.put(DatabasePatient.PASSWORD, password);
+		contentValue.put(DatabasePatient.NUMSECU, numSecu);
 
-		database.insert(DatabaseHelper.TABLE_NAME, null, contentValue);
+		database.insert(DatabasePatient.TABLE_NAME, null, contentValue);
 	}
 
 
@@ -61,12 +59,12 @@ public class DBManager {
 	//~-------------------------------------------------
 	public Cursor fetch() {
 		String[] columns = new String[] {
-				DatabaseHelper.USER_ID,
-				DatabaseHelper.EMAIL,
-				DatabaseHelper.PASSWORD,
-				DatabaseHelper.NUMSECU
+				DatabasePatient.USER_ID,
+				DatabasePatient.EMAIL,
+				DatabasePatient.PASSWORD,
+				DatabasePatient.NUMSECU
 		};
-		Cursor cursor = database.query(DatabaseHelper.TABLE_NAME, columns, null, null, null, null, null);
+		Cursor cursor = database.query(DatabasePatient.TABLE_NAME, columns, null, null, null, null, null);
 		if (cursor != null) {
 			cursor.moveToFirst();
 		}
@@ -81,9 +79,9 @@ public class DBManager {
 	public int update(long _id, String email, String password) {
 		ContentValues contentValues = new ContentValues();
 
-		contentValues.put(DatabaseHelper.EMAIL, email);
-		contentValues.put(DatabaseHelper.PASSWORD, password);
-		int i = database.update(DatabaseHelper.TABLE_NAME, contentValues, DatabaseHelper.USER_ID + " = " + _id, null);
+		contentValues.put(DatabasePatient.EMAIL, email);
+		contentValues.put(DatabasePatient.PASSWORD, password);
+		int i = database.update(DatabasePatient.TABLE_NAME, contentValues, DatabasePatient.USER_ID + " = " + _id, null);
 		return i;
 	}
 
@@ -91,7 +89,7 @@ public class DBManager {
     //~ Delete a user
     //~-------------------------------------------------
 	public void delete(long _id) {
-		database.delete(DatabaseHelper.TABLE_NAME, DatabaseHelper.USER_ID + "=" + _id, null);
+		database.delete(DatabasePatient.TABLE_NAME, DatabasePatient.USER_ID + "=" + _id, null);
 	}
 
 }

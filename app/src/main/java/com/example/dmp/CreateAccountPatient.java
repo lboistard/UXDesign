@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cursoradapter.widget.SimpleCursorAdapter;
 
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
@@ -14,8 +15,10 @@ import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-import com.example.dmp.database.DBManager;
-import com.example.dmp.database.DatabaseHelper;
+import com.example.dmp.Database.DBManager;
+import com.example.dmp.Database.DatabasePatient;
+import com.example.dmp.PopMessages.AccountCreated;
+import com.google.android.material.snackbar.Snackbar;
 
 public class CreateAccountPatient extends AppCompatActivity {
 
@@ -23,31 +26,14 @@ public class CreateAccountPatient extends AppCompatActivity {
     //~ Class/Object declaration
     //~-------------------------------------------------
     private DBManager dbManager;
-    private ListView listView;
     private SimpleCursorAdapter adapter;
-    final String[] from = new String[] {
-            DatabaseHelper.USER_ID,
-            DatabaseHelper.EMAIL,
-            DatabaseHelper.PASSWORD,
-            DatabaseHelper.NUMSECU
-    };
-
-    final int[] to = new int[] {
-            R.id.title,
-            R.id.emailUser
-    };
-
     //~-------------------------------------------------
     //~ Components declaration
     //~-------------------------------------------------
-    TextView createAccountTextView,confirmPasswordTextView, statutTextView,ifProfessionelTextView;
+    TextView createAccountTextView,confirmPasswordTextView;
     ImageView logoCreateAccount;
-    EditText emailUser, passwordUser,passwordAgainUser;
+    EditText emailUser, passwordUser,passwordAgainUser, numSecuPatient;
     Button createAccountButton;
-    RadioButton particulierButton, professionelSanteButton;
-
-
-
 
 
     //~-------------------------------------------------
@@ -56,13 +42,12 @@ public class CreateAccountPatient extends AppCompatActivity {
     public void createAccountComponents(){
         createAccountTextView = findViewById(R.id.createAccountTextView);
 		confirmPasswordTextView = findViewById(R.id.confirmPasswordTextView);
-
 		logoCreateAccount = findViewById(R.id.logoCreateAccount);
 		emailUser = findViewById(R.id.emailUser);
 		passwordUser = findViewById(R.id.passwordUser);
 		passwordAgainUser = findViewById(R.id.passwordAgainUser);
+        numSecuPatient = findViewById(R.id.numSecuPatient);
 		createAccountButton = findViewById(R.id.createAccountButton);
-
     }
 
     //~-------------------------------------------------
@@ -71,29 +56,31 @@ public class CreateAccountPatient extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_create_account_patient);
+        createAccountComponents();
 
         dbManager = new DBManager(this);
         dbManager.open();
         Cursor cursor = dbManager.fetch();
-
-        createAccountComponents();
     }
 
     //~-------------------------------------------------
     //~ Account Creation, connect to database
     //~-------------------------------------------------
     public void createAccount(View view) {
-        String username = emailUser.getText().toString();
+
+        String email = emailUser.getText().toString();
         String password = passwordUser.getText().toString();
+        String numSecu = numSecuPatient.getText().toString();
 
-        String type= particulierButton.getText().toString();
+        System.out.println("email : " + email + " password : " +  password + " numsecu : " +  numSecu);
 
+        dbManager.insert(email, password, numSecu);
 
-
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intent);
     }
-
-
 }
 
 
