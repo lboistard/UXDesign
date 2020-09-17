@@ -45,16 +45,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     //~-------------------------------------------------
-    //~
+    //~ Create the table if not exist
     //~-------------------------------------------------
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(CREATE_TABLE);
     }
 
-
     //~-------------------------------------------------
-    //~
+    //~ To upgrade the DB content
     //~-------------------------------------------------
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {

@@ -1,33 +1,41 @@
 package com.example.dmp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cursoradapter.widget.SimpleCursorAdapter;
 
 
-import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
+import android.database.Cursor;
 import android.os.Bundle;
-import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-import com.example.dmp.User.User;
-import com.example.dmp.database.DBPatient;
-import com.example.dmp.database.DBUser;
+import com.example.dmp.database.DBManager;
+import com.example.dmp.database.DatabaseHelper;
 
+public class CreateAccountPatient extends AppCompatActivity {
 
-import org.json.JSONException;
+    //~-------------------------------------------------
+    //~ Class/Object declaration
+    //~-------------------------------------------------
+    private DBManager dbManager;
+    private ListView listView;
+    private SimpleCursorAdapter adapter;
+    final String[] from = new String[] {
+            DatabaseHelper.USER_ID,
+            DatabaseHelper.EMAIL,
+            DatabaseHelper.PASSWORD,
+            DatabaseHelper.NUMSECU
+    };
 
-
-import java.io.FileWriter;
-
-import android.content.Context;
-
-public class CreateAccount extends AppCompatActivity {
-
+    final int[] to = new int[] {
+            R.id.title,
+            R.id.emailUser
+    };
 
     //~-------------------------------------------------
     //~ Components declaration
@@ -66,27 +74,29 @@ public class CreateAccount extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_account);
+        setContentView(R.layout.activity_create_account_patient);
+
+        dbManager = new DBManager(this);
+        dbManager.open();
+        Cursor cursor = dbManager.fetch();
+
         createAccountComponents();
     }
 
     //~-------------------------------------------------
     //~ Account Creation, connect to database
     //~-------------------------------------------------
-    public void createAccount(View view) throws JSONException {
+    public void createAccount(View view) {
         String username = emailUser.getText().toString();
         String password = passwordUser.getText().toString();
+
         String type= particulierButton.getText().toString();
 
-        addPatientToJson();
 
 
     }
 
-    public void addPatientToJson(){
 
-
-    }
 }
 
 
