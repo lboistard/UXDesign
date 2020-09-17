@@ -1,4 +1,4 @@
-/*
+
 package com.example.dmp.database;
 
 import android.content.ContentValues;
@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteDatabase;
 import com.example.dmp.database.DatabaseHelper;
 
 public class DBManager {
-
+/*
 	private DatabaseHelper dbHelper;
 	private Context context;
 	private SQLiteDatabase database;
@@ -66,6 +66,5 @@ public class DBManager {
 	public void delete(long _id) {
 		database.delete(DatabaseHelper.TABLE_NAME, DatabaseHelper._ID + "=" + _id, null);
 	}
-
-}
 */
+}
