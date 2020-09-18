@@ -15,14 +15,14 @@ public class DatabaseMedecin extends SQLiteOpenHelper {
     //~ TABLE COLUMNS
     //~-------------------------------------------------
     public static final String MED_ID = "medecin_id";
-    public static final String EMAIL = "email";
-    public static final String PASSWORD = "password";
+    public static final String EMAIL = "emailMed";
+    public static final String PASSWORD = "passwordMed";
     public static final String NUMCPS = "NUMCPS";
 
     //~-------------------------------------------------
     //~ DATABASE INFORMATIONS
     //~-------------------------------------------------
-    static final String DB_NAME = "medecin.db";
+    static final String DB_NAME = "medecins.db";
     static final int DB_VERSION = 1;
 
     //~-------------------------------------------------

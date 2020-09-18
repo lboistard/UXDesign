@@ -51,4 +51,20 @@ public class LoginMedecin extends AppCompatActivity {
         Intent intent = new Intent(LoginMedecin.this, MainActivity.class);
         startActivity(intent);
     }
+
+    //~-------------------------------------------------
+    //~ Connect to a med account
+    //~-------------------------------------------------
+    public void connectMed(View view) {
+    }
+
+    //~-------------------------------------------------
+    //~ Method that link to the "Create Med Acccount"
+    //~-------------------------------------------------
+    public void createMedAccount(View view) {
+        Intent intent = new Intent(LoginMedecin.this, CreateAccountMed.class);
+        startActivity(intent);
+    }
+
+
 }

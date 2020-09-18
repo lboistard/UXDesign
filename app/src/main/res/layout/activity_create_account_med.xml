@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".CreateAccountPatient">
+    tools:context=".CreateAccountMed">
 
 
     <TextView
-        android:id="@+id/createAccountTextView"
+        android:id="@+id/createMedAccountTextView"
         android:layout_width="327dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -21,7 +21,7 @@
         android:textSize="35sp" />
 
     <ImageView
-        android:id="@+id/logoCreateAccount"
+        android:id="@+id/logoCreateMedAccount"
         android:layout_width="match_parent"
         android:layout_height="302dp"
         android:layout_alignParentTop="true"
@@ -30,7 +30,7 @@
         app:srcCompat="@drawable/createaccount" />
 
     <EditText
-        android:id="@+id/emailUser"
+        android:id="@+id/emailMedecin"
         android:hint="Email"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
         android:textColor="#7A121212" />
 
     <EditText
-        android:id="@+id/passwordUser"
+        android:id="@+id/passwordAgainMedecin"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -62,7 +62,7 @@
         android:textColor="#7A121212" />
 
     <EditText
-        android:id="@+id/passwordAgainUser"
+        android:id="@+id/passwordMedecin"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -88,7 +88,7 @@
         android:text="confirmez votre mot de passe" />
 
     <Button
-        android:id="@+id/createAccountButton"
+        android:id="@+id/createMedAccountButton"
         android:layout_width="228dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -98,7 +98,7 @@
         android:backgroundTint="#FF9D8D"
         android:duplicateParentState="true"
         android:fontFamily="@font/muli"
-        android:onClick="createAccount"
+        android:onClick="createMedAccount"
         android:text="Créer"
         android:textColor="#FFFFFF" />
 
@@ -112,7 +112,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/editTextCPS"
+            android:id="@+id/numCPSMed"
             android:layout_width="310dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -125,7 +125,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/toMedecin"
+        android:id="@+id/toSignInMedecin"
 
         android:layout_marginBottom="8dp"
         android:layout_width="wrap_content"
