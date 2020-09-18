@@ -13,15 +13,17 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.dmp.Database.DBManager;
+import com.example.dmp.Database.DBManagerPatient;
 
 public class CreateAccountPatient extends AppCompatActivity {
 
     //~-------------------------------------------------
     //~ Class/Object declaration
     //~-------------------------------------------------
-    private DBManager dbManager;
+    private DBManagerPatient dbManagerPatient;
     private SimpleCursorAdapter adapter;
+
+
     //~-------------------------------------------------
     //~ Components declaration
     //~-------------------------------------------------
@@ -55,9 +57,9 @@ public class CreateAccountPatient extends AppCompatActivity {
         setContentView(R.layout.activity_create_account_patient);
         createAccountComponents();
 
-        dbManager = new DBManager(this);
-        dbManager.open();
-        Cursor cursor = dbManager.fetch();
+        dbManagerPatient = new DBManagerPatient(this);
+        dbManagerPatient.openDBPatient();
+        Cursor cursor = dbManagerPatient.fetch();
     }
 
     //~-------------------------------------------------
@@ -71,7 +73,7 @@ public class CreateAccountPatient extends AppCompatActivity {
 
         System.out.println("email : " + email + " password : " +  password + " numsecu : " +  numSecu);
 
-        dbManager.insert(email, password, numSecu);
+        dbManagerPatient.insertPatient(email, password, numSecu);
 
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intent);

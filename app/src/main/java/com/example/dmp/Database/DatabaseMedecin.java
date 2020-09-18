@@ -14,7 +14,7 @@ public class DatabaseMedecin extends SQLiteOpenHelper {
     //~-------------------------------------------------
     //~ TABLE COLUMNS
     //~-------------------------------------------------
-    public static final String USER_ID = "user_id";
+    public static final String MED_ID = "medecin_id";
     public static final String EMAIL = "email";
     public static final String PASSWORD = "password";
     public static final String NUMCPS = "NUMCPS";
@@ -28,7 +28,7 @@ public class DatabaseMedecin extends SQLiteOpenHelper {
     //~-------------------------------------------------
     //~ Table Query
     //~-------------------------------------------------
-    private static final String CREATE_TABLE = "create table " + TABLE_NAME + "(" + USER_ID
+    private static final String CREATE_TABLE = "create table " + TABLE_NAME + "(" + MED_ID
             + " INTEGER PRIMARY KEY AUTOINCREMENT," +
             " " + EMAIL + " TEXT NOT NULL, " +
             " " + PASSWORD + " TEXT NOT NULL," +
@@ -48,6 +48,7 @@ public class DatabaseMedecin extends SQLiteOpenHelper {
     //~-------------------------------------------------
     @Override
     public void onCreate(SQLiteDatabase db) {
+
         db.execSQL(CREATE_TABLE);
     }
 
