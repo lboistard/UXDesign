@@ -22,8 +22,8 @@
 
     <ImageView
         android:id="@+id/logoCreateAccount"
-        android:layout_width="422dp"
-        android:layout_height="267dp"
+        android:layout_width="match_parent"
+        android:layout_height="302dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
@@ -31,6 +31,7 @@
 
     <EditText
         android:id="@+id/emailUser"
+        android:hint="Email"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -42,7 +43,6 @@
         android:ems="10"
         android:fontFamily="@font/muli_extralight"
         android:inputType="textPersonName"
-        android:text="Email"
         android:textColor="#7A121212" />
 
     <EditText
@@ -58,7 +58,7 @@
         android:ems="10"
         android:fontFamily="@font/muli_extralight"
         android:inputType="textPersonName"
-        android:text="Password"
+        android:hint="Password Again"
         android:textColor="#7A121212" />
 
     <EditText
@@ -74,7 +74,7 @@
         android:ems="10"
         android:fontFamily="@font/muli_extralight"
         android:inputType="textPersonName"
-        android:text="Password"
+        android:hint="Password"
         android:textColor="#7A121212" />
 
     <TextView
@@ -93,7 +93,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="618dp"
+        android:layout_marginTop="580dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="#FF9D8D"
         android:duplicateParentState="true"
@@ -108,6 +108,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="520dp"
+
         android:orientation="horizontal">
 
         <EditText
@@ -119,8 +120,25 @@
             android:fontFamily="@font/muli_extralight"
             android:inputType="textPostalAddress"
             android:textColor="#7A121212"
-            tools:text="N° CPS" />
+            android:hint="N° CPS"
+            />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/toMedecin"
+
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="630dp"
+        android:fontFamily="@font/muli_extralight"
+        android:onClick="toMedecin"
+        android:text="Déjà un compte ?"
+        android:textAllCaps="false"
+        android:textColor="#03A9F4" />
 
 
 </RelativeLayout>

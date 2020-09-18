@@ -11,14 +11,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.example.dmp.Database.DBManager;
-import com.example.dmp.Database.DatabasePatient;
-import com.example.dmp.PopMessages.AccountCreated;
-import com.google.android.material.snackbar.Snackbar;
 
 public class CreateAccountPatient extends AppCompatActivity {
 
@@ -79,6 +74,15 @@ public class CreateAccountPatient extends AppCompatActivity {
         dbManager.insert(email, password, numSecu);
 
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intent);
+    }
+
+
+    //~-------------------------------------------------
+    //~ Method that link to the "User login page"
+    //~-------------------------------------------------
+    public void toPatient(View view) {
+        Intent intent = new Intent(CreateAccountPatient.this, MainActivity.class);
         startActivity(intent);
     }
 }

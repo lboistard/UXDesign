@@ -9,6 +9,20 @@
 
 
     <TextView
+        android:id="@+id/toPatient2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="630dp"
+        android:fontFamily="@font/muli_extralight"
+        android:onClick="toPatient"
+        android:text="Déjà un compte ?"
+        android:textAllCaps="false"
+        android:textColor="#03A9F4" />
+
+    <TextView
         android:id="@+id/createAccountTextView"
         android:layout_width="327dp"
         android:layout_height="wrap_content"
@@ -42,7 +56,8 @@
         android:ems="10"
         android:fontFamily="@font/muli_extralight"
         android:inputType="textPersonName"
-        android:text="Email"
+
+        android:hint="Email"
         android:textColor="#7A121212" />
 
     <EditText
@@ -58,7 +73,7 @@
         android:ems="10"
         android:fontFamily="@font/muli_extralight"
         android:inputType="textPersonName"
-        android:text="Password"
+        android:hint="Password again"
         android:textColor="#7A121212" />
 
     <EditText
@@ -74,7 +89,7 @@
         android:ems="10"
         android:fontFamily="@font/muli_extralight"
         android:inputType="textPersonName"
-        android:text="Password"
+        android:hint="Password"
         android:textColor="#7A121212" />
 
     <TextView
@@ -104,7 +119,7 @@
             android:fontFamily="@font/muli_extralight"
             android:inputType="textPersonName"
             android:textColor="#7A121212"
-            tools:text="N Sécurité sociale" />
+            android:hint="N° Sécurité sociale"/>
     </LinearLayout>
 
     <Button
@@ -113,7 +128,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="618dp"
+        android:layout_marginTop="580dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="#617BFC"
         android:duplicateParentState="true"
