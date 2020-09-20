@@ -71,7 +71,6 @@ public class CreateAccountPatient extends AppCompatActivity {
         String password = passwordUser.getText().toString();
         String numSecu = numSecuPatient.getText().toString();
 
-        System.out.println("email : " + email + " password : " +  password + " numsecu : " +  numSecu);
 
         dbManagerPatient.insertPatient(email, password, numSecu);
 

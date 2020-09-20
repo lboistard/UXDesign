@@ -19,7 +19,6 @@ public class DBManagerMedecin {
     //~ Constructor
     //~-------------------------------------------------
     public DBManagerMedecin(Context c) {
-
         context = c;
     }
 
@@ -60,6 +59,25 @@ public class DBManagerMedecin {
             cursor.moveToFirst();
         }
         return cursor;
+    }
+
+    public String checkUserExist(String mail, String password, String CPS){
+        String[] columns = {"NUMCPS"};
+
+
+        String selection = "emailMed= ? and passwordMed = ? and NUMCPS = ?";
+        String[] selectionArgs = {mail, password, CPS};
+
+        Cursor cursor = databaseMed.query("medecins", columns, selection, selectionArgs, null, null, null);
+        int count = cursor.getCount();
+
+        cursor.close();
+
+
+        if(count > 0){
+            return CPS;
+        }
+        return "false";
     }
 
     //~-------------------------------------------------

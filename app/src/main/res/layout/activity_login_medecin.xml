@@ -36,13 +36,14 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="58dp"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="370dp"
         android:layout_marginEnd="58dp"
         android:layout_marginBottom="23dp"
         android:ems="10"
         android:fontFamily="@font/muli_extralight"
+        android:hint="Email"
+
         android:inputType="textPersonName"
-        android:text="Email"
         android:textColor="#7A121212" />
 
     <EditText
@@ -52,13 +53,31 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="58dp"
-        android:layout_marginTop="475dp"
+        android:layout_marginTop="425dp"
         android:layout_marginEnd="58dp"
         android:layout_marginBottom="36dp"
         android:ems="10"
         android:fontFamily="@font/muli_extralight"
+        android:hint="Password"
+
         android:inputType="textPersonName"
-        android:text="Password"
+        android:textColor="#7A121212" />
+
+    <EditText
+        android:id="@+id/numCPS"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:fontFamily="@font/muli_extralight"
+        android:hint="N° CPS"
+
+        android:inputType="textPersonName"
         android:textColor="#7A121212" />
 
     <Button

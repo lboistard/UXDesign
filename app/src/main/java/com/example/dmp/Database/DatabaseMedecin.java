@@ -9,7 +9,7 @@ public class DatabaseMedecin extends SQLiteOpenHelper {
     //~-------------------------------------------------
     //~ TABLE NAME
     //~-------------------------------------------------
-    public static final String TABLE_NAME = "medecin";
+    public static final String TABLE_NAME = "medecins";
 
     //~-------------------------------------------------
     //~ TABLE COLUMNS
