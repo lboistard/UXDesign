@@ -1,115 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".AccueilPatientActivity">
 
     <TextView
-        android:id="@+id/TextPatient"
-        android:layout_width="99dp"
-        android:layout_height="38dp"
+        android:id="@+id/medecinTextView"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/muli_extralight"
         android:text="Patient"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:textAlignment="center"
+        android:textSize="35sp" />
+
 
     <ImageView
-        android:id="@+id/ImagePatient"
-        android:layout_width="414dp"
-        android:layout_height="300dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/logoMedecin"
+        android:layout_width="365dp"
+        android:layout_height="324dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
         app:srcCompat="@drawable/office_worker_4x"
         tools:layout_editor_absoluteY="69dp" />
 
-    <TextView
-        android:id="@+id/TextNumeroS"
-        android:layout_width="115dp"
-        android:layout_height="15dp"
-        android:text="N° Sécurité sociale :"
-        android:textSize="12sp"
-        android:fontFamily="@font/muli_extralight_italic"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="380dp" />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="360dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textNumCps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_extralight_italic"
+            android:text="N° de Sécurité Sociale :"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="380dp" />
+
+        <TextView
+            android:id="@+id/TextNumeroS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_extralight_italic"
+            android:text="00 0000 0000 000"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="380dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="421dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonBiologie"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/muli"
+            android:text="Biologie"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="420dp" />
+
+        <Button
+            android:id="@+id/buttonImagerieMedical"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/muli"
+            android:text="Imagerie Médicale"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="230dp"
+            tools:layout_editor_absoluteY="420dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="561dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonCompteRendu"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/muli"
+            android:text="Compte rendus"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="420dp" />
+
+        <Button
+            android:id="@+id/buttonTraitement"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/muli"
+            android:text="Traitement et soins"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="230dp"
+            tools:layout_editor_absoluteY="420dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_menu"
+            android:foreground="@drawable/user"
+            android:foregroundGravity="center"
+            android:textColorLink="#FFFFFF" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_menu"
+            android:foreground="@drawable/user"
+            android:foregroundGravity="center"
+            android:textColorLink="#FFFFFF" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_menu"
+            android:foreground="@drawable/user"
+            android:foregroundGravity="center"
+            android:textColorLink="#FFFFFF" />
+    </LinearLayout>
 
 
-    <TextView
-        android:id="@+id/TextNumeroSPatient"
-        android:layout_width="150dp"
-        android:layout_height="15dp"
-        android:text="00 0000 0000 000"
-        android:textSize="12sp"
-        android:fontFamily="@font/muli_extralight_italic"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="380dp" />
-
-
-    <Button
-        android:id="@+id/buttonCompteRendu"
-        android:layout_width="160dp"
-        android:layout_height="105dp"
-        android:text="Compte rendus"
-        android:textSize="12sp"
-        android:fontFamily="@font/muli"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="420dp" />
-
-    <Button
-        android:id="@+id/buttonTraitement"
-        android:layout_width="160dp"
-        android:layout_height="105dp"
-        android:text="Traitement et soins"
-        android:textSize="12sp"
-        android:fontFamily="@font/muli"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="420dp" />
-
-    <Button
-        android:id="@+id/buttonImagerieMedical"
-        android:layout_width="160dp"
-        android:layout_height="105dp"
-        android:text="Imagerie médicale"
-        android:textSize="12sp"
-        android:fontFamily="@font/muli"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="550dp" />
-
-    <Button
-        android:id="@+id/buttonBiologie"
-        android:layout_width="160dp"
-        android:layout_height="105dp"
-        android:text="Biologie"
-        android:textSize="12sp"
-        android:fontFamily="@font/muli"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="550dp" />
-
-    <Button
-        android:id="@+id/buttonHome"
-        android:layout_width="135dp"
-        android:layout_height="50dp"
-        android:background="#494FBF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <Button
-        android:id="@+id/buttonInformation"
-        android:layout_width="135dp"
-        android:layout_height="50dp"
-        android:background="#494FBF"
-        android:foreground="@android:drawable/ic_dialog_info"
-        android:foregroundGravity="center_vertical|center_horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="138dp" />
-
-    <Button
-        android:id="@+id/buttonProfile"
-        android:layout_width="136dp"
-        android:layout_height="50dp"
-        android:background="#494FBF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="276dp" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

@@ -61,6 +61,8 @@ public class DBManagerMedecin {
         return cursor;
     }
 
+
+    //Check if user exist
     public String checkUserExist(String mail, String password, String CPS){
         String[] columns = {"NUMCPS"};
 

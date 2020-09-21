@@ -11,20 +11,20 @@ public class DatabasePatient extends SQLiteOpenHelper {
     //~-------------------------------------------------
     //~ TABLE NAME
     //~-------------------------------------------------
-    public static final String TABLE_NAME = "users";
+    public static final String TABLE_NAME = "patients";
 
     //~-------------------------------------------------
     //~ TABLE COLUMNS
     //~-------------------------------------------------
-    public static final String USER_ID = "user_id";
-    public static final String EMAIL = "email";
-    public static final String PASSWORD = "password";
-    public static final String NUMSECU = "numsecu";
+    public static final String USER_ID = "patient_id";
+    public static final String EMAIL = "emailPatient";
+    public static final String PASSWORD = "passwordPatient";
+    public static final String NUMSECU = "numSecuPatient";
 
     //~-------------------------------------------------
     //~ DATABASE INFORMATIONS
     //~-------------------------------------------------
-    static final String DB_NAME = "users.db";
+    static final String DB_NAME = "patients.db";
     static final int DB_VERSION = 1;
 
     //~-------------------------------------------------

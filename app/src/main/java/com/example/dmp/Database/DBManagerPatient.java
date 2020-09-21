@@ -60,7 +60,7 @@ public class DBManagerPatient {
 
 
 	//~-------------------------------------------------
-	//~ Find Patient in DB
+	//~ fetch the db
 	//~-------------------------------------------------
 	public Cursor fetch() {
 		String[] columns = new String[] {
@@ -76,6 +76,26 @@ public class DBManagerPatient {
 		return cursor;
 	}
 
+	//~-------------------------------------------------
+	//~ Find Patient in DB
+	//~-------------------------------------------------
+	public String checkUserExist(String mail, String password, String numSecu){
+		String[] columns = {"numSecuPatient"};
+
+		String selection = "emailPatient = ? and passwordPatient = ? and numSecuPatient = ?";
+		String[] selectionArgs = {mail, password, numSecu};
+
+		Cursor cursor = databasePatient.query("patients", columns, selection, selectionArgs, null, null, null);
+		int count = cursor.getCount();
+
+		cursor.close();
+		databasePatient.close();
+
+		if(count > 0){
+			return numSecu;
+		}
+		return "false";
+	}
 
     //~-------------------------------------------------
     //~ Update la db: contrainte sur le numsecu

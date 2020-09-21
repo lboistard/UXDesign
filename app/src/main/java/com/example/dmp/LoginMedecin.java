@@ -75,8 +75,6 @@ public class LoginMedecin extends AppCompatActivity {
     //~-------------------------------------------------
     public void connectMed(View view){
 
-
-
         //Catch data from input
         String email = emailMedecin.getText().toString();
         String password = passwordMedecin.getText().toString();

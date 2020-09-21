@@ -9,11 +9,11 @@ import android.widget.TextView;
 
 public class AccueilMedecinActivity extends AppCompatActivity {
 
-    TextView TextNumeroSPatient;
+    TextView TextNumeroS;
 
     private void initComponents(){
 
-        TextNumeroSPatient = (TextView)findViewById(R.id.TextNumeroSPatient);
+        TextNumeroS = (TextView)findViewById(R.id.numCPS);
     }
 
 
@@ -28,7 +28,7 @@ public class AccueilMedecinActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String var =  intent.getStringExtra("numCps");
-        TextNumeroSPatient.setText(var);
+        TextNumeroS.setText(var);
 
 
     }
