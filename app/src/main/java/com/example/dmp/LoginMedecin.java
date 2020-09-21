@@ -91,6 +91,10 @@ public class LoginMedecin extends AppCompatActivity {
         if(numCps != "false"){
             numCpsFinal = cps;
 
+            Intent intent = new Intent(LoginMedecin.this, AccueilMedecinActivity.class);
+            intent.putExtra("numCps", numCpsFinal);
+            startActivity(intent);
+
         }
 
     }
@@ -100,14 +104,9 @@ public class LoginMedecin extends AppCompatActivity {
     //~-------------------------------------------------
     public void createMedAccount(View view) {
 
-
-        Intent intent = new Intent(LoginMedecin.this, AccueilMedecin.class);
-        startActivity(intent);
-
-        /*
         Intent intent = new Intent(LoginMedecin.this, CreateAccountMed.class);
         startActivity(intent);
-*/
+
     }
 
 

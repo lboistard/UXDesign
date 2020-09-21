@@ -72,7 +72,7 @@ public class DBManagerMedecin {
         int count = cursor.getCount();
 
         cursor.close();
-
+        databaseMed.close();
 
         if(count > 0){
             return CPS;
