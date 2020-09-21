@@ -7,6 +7,8 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
+import java.util.HashMap;
+
 public class DBManagerPatient {
 
     //~-------------------------------------------------
@@ -15,7 +17,7 @@ public class DBManagerPatient {
 	private DatabasePatient dbHelperPatient;
 	private Context context;
 	private SQLiteDatabase databasePatient;
-
+	private HashMap<String, String> patientData;;
 
     //~-------------------------------------------------
     //~ Constructor
@@ -95,6 +97,29 @@ public class DBManagerPatient {
 			return numSecu;
 		}
 		return "false";
+	}
+
+
+	//~-------------------------------------------------
+	//~ Find patient Informations from one param
+	//~-------------------------------------------------
+	public String  getPatientInfos(String numSecu){
+
+
+
+		Cursor cursor = databasePatient.rawQuery("SELECT emailPatient FROM patients ", null);
+
+		if (cursor != null) {
+			if (cursor.moveToFirst()) {
+				do {
+					String numS = cursor.getString(cursor.getColumnIndex("emailPatient"));
+
+					//patientData.put("numSecu", numS);
+					return numS;
+				} while (cursor.moveToNext());
+			}
+		}
+		return null;
 	}
 
     //~-------------------------------------------------
