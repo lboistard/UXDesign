@@ -51,7 +51,6 @@
         android:stretchColumns="1"
         tools:layout_editor_absoluteX="54dp"
         tools:layout_editor_absoluteY="383dp">
-
         <TableRow>
 
             <TextView
