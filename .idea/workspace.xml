@@ -401,10 +401,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="816" y="332" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600345817759" />
-    <state x="339" y="12" key="CommitChangelistDialog2" timestamp="1600768182207">
+    <state x="339" y="12" key="CommitChangelistDialog2" timestamp="1600768251605">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="339" y="12" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1600768182207" />
+    <state x="339" y="12" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1600768251605" />
     <state x="452" y="14" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600349716782" />
     <state x="339" y="36" key="CommitChangelistDialog2/0.25.1440.822@0.25.1440.822" timestamp="1600185316221" />
     <state x="120" y="145" width="1200" height="582" key="DiffContextDialog" timestamp="1600370975631">
@@ -459,10 +459,10 @@
     </state>
     <state x="478" y="130" key="VCS.ChangeListViewerDialog/0.0.1440.900@0.0.1440.900" timestamp="1600418967810" />
     <state x="478" y="144" key="VCS.ChangeListViewerDialog/0.25.1440.822@0.25.1440.822" timestamp="1600370997309" />
-    <state x="320" y="162" key="Vcs.Push.Dialog.v2" timestamp="1600768187925">
+    <state x="320" y="162" key="Vcs.Push.Dialog.v2" timestamp="1600768257943">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="162" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1600768187925" />
+    <state x="320" y="162" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1600768257943" />
     <state x="427" y="187" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600349721861" />
     <state x="320" y="173" key="Vcs.Push.Dialog.v2/0.25.1440.822@0.25.1440.822" timestamp="1600185322301" />
     <state x="120" y="145" width="1200" height="582" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1600258193517">
@@ -473,10 +473,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1440.900@0.0.1440.900" timestamp="1600763258296" />
-    <state x="500" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600763332446">
+    <state x="500" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600768348926">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="500" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1600763332446" />
+    <state x="500" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1600768348926" />
     <state x="409" y="224" key="git4idea.merge.GitPullDialog" timestamp="1600762055443">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
