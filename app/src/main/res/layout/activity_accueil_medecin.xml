@@ -60,5 +60,239 @@
             tools:layout_editor_absoluteY="380dp" />
     </LinearLayout>
 
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="431dp"
+        android:gravity="center"
+        android:stretchColumns="0,1,2">
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/muli_extralight"
+                android:gravity="center"
+                android:text="Nom"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/muli_extralight"
+                android:gravity="center"
+                android:text="Date"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/muli_extralight"
+                android:gravity="center"
+                android:text="Action"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/muli_extralight"
+                android:gravity="center"
+                android:text="Dupont"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/muli_extralight"
+                android:gravity="center"
+                android:text="03/01/2020"
+                android:textSize="15sp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                >
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_height="match_parent"
+                    android:layout_width="50dp"
+                    android:layout_margin="5dp"
+                    android:background="#FFFFFF"
+                    android:layout_gravity="center"
+                    app:srcCompat="@android:drawable/ic_delete" />
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_height="match_parent"
+                    android:layout_width="50dp"
+                    android:layout_margin="5dp"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@android:drawable/ic_menu_edit" />
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_height="match_parent"
+                    android:layout_width="50dp"
+                    android:layout_margin="5dp"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@android:drawable/ic_menu_view" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/muli_extralight"
+                android:gravity="center"
+                android:text="Mayer"
+                android:textSize="15sp"
+
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/muli_extralight"
+                android:gravity="center"
+                android:text="01/01/2019"
+                android:textSize="15sp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                >
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    android:layout_height="match_parent"
+                    android:layout_width="50dp"
+                    android:layout_margin="5dp"
+                    android:background="#FFFFFF"
+                    android:layout_gravity="center"
+                    app:srcCompat="@android:drawable/ic_delete" />
+
+                <ImageButton
+                    android:id="@+id/imageButton8"
+                    android:layout_height="match_parent"
+                    android:layout_width="50dp"
+                    android:layout_margin="5dp"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@android:drawable/ic_menu_edit" />
+
+                <ImageButton
+                    android:id="@+id/imageButton9"
+                    android:layout_height="match_parent"
+                    android:layout_width="50dp"
+                    android:layout_margin="5dp"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@android:drawable/ic_menu_view" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/muli_extralight"
+                android:gravity="center"
+                android:text="Soyer"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/muli_extralight"
+                android:gravity="center"
+                android:text="05/10/2019"
+                android:textSize="15sp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/imageButton10"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@android:drawable/ic_delete" />
+
+                <ImageButton
+                    android:id="@+id/imageButton11"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@android:drawable/ic_menu_edit" />
+
+                <ImageButton
+                    android:id="@+id/imageButton12"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@android:drawable/ic_menu_view" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
 
 </RelativeLayout>
