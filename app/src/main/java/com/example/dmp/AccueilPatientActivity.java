@@ -48,7 +48,6 @@ public class AccueilPatientActivity extends AppCompatActivity {
 
     public void toPatientAccount(View view) {
 
-        System.out.println("TESSSSSSSSSST");
 
         String de = dbManagerPatient.getPatientInfos(numeroSecu);
         System.out.println(de);

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".SoinsPatientsActivity">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="41dp"
+        android:layout_height="37dp"
+        android:background="#FFFFFF"
+        android:foreground="@drawable/square"
+        tools:layout_editor_absoluteX="354dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="358dp"
+        android:layout_height="258dp"
+        app:srcCompat="@drawable/pills"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mes Soins"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mes Traitements"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="578dp" />
+
+    <TableLayout
+        android:layout_width="329dp"
+        android:layout_height="186dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:stretchColumns="1"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="383dp">
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="Open..." />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Ctrl-O" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:backgroundTint="#46BFBFBF"
+                android:padding="3dip"
+                android:text="Save..." />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Ctrl-S" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="Save As..." />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Ctrl-Shift-S" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="3dip" />
+
+            <TextView
+                android:padding="3dip"
+                android:text="Export..." />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Ctrl-E" />
+        </TableRow>
+        
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="Quit" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
