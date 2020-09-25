@@ -47,10 +47,16 @@ public class AccueilPatientActivity extends AppCompatActivity {
     }
 
     public void toPatientAccount(View view) {
-
-
         String de = dbManagerPatient.getPatientInfos(numeroSecu);
-        System.out.println(de);
+
+
+    }
+
+    public void toSoins(View view) {
+
+
+        Intent intent = new Intent(this, SoinsPatientsActivity.class);
+        startActivity(intent);
 
     }
 }

@@ -89,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
         //ask if user exist
         String numReturn = dbManagerPatient.checkUserExist(email, password, numSecu);
+        dbManagerPatient.close();
 
         //If user exist, go to next page
         if(numReturn != "false"){

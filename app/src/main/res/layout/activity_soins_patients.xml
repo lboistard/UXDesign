@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:backgroundTint="#FFFFFF"
     tools:context=".SoinsPatientsActivity">
 
     <Button
@@ -19,8 +18,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="358dp"
-        android:layout_height="258dp"
+        android:layout_width="match_parent"
+        android:layout_height="342dp"
         app:srcCompat="@drawable/pills"
         tools:layout_editor_absoluteX="26dp"
         tools:layout_editor_absoluteY="68dp" />
@@ -29,6 +28,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/muli_light"
         android:text="Mes Soins"
         android:textSize="36sp"
         tools:layout_editor_absoluteX="122dp"
@@ -38,30 +38,35 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/muli_light"
         android:text="Mes Traitements"
         android:textSize="36sp"
         tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="578dp" />
+        tools:layout_editor_absoluteY="533dp" />
 
     <TableLayout
-        android:layout_width="329dp"
-        android:layout_height="186dp"
+        android:layout_width="357dp"
+        android:layout_height="111dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="420dp"
         android:stretchColumns="1"
-        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteX="40dp"
         tools:layout_editor_absoluteY="383dp">
+
         <TableRow>
 
             <TextView
                 android:layout_column="1"
+                android:background="#E4E4E4"
                 android:padding="3dip"
-                android:text="Open..." />
+                android:text="Rendez-vous 19/04/20" />
 
             <TextView
+                android:background="#FFE4E4E4"
                 android:gravity="right"
                 android:padding="3dip"
-                android:text="Ctrl-O" />
+                android:text="Cardiologue " />
         </TableRow>
 
         <TableRow>
@@ -82,13 +87,15 @@
 
             <TextView
                 android:layout_column="1"
+                android:background="#FFE4E4E4"
                 android:padding="3dip"
-                android:text="Save As..." />
+                android:text="Rendez-vous du 17/03/20 " />
 
             <TextView
+                android:background="#FFE4E4E4"
                 android:gravity="right"
                 android:padding="3dip"
-                android:text="Ctrl-Shift-S" />
+                android:text="Cardiologue " />
         </TableRow>
 
 
@@ -107,15 +114,9 @@
                 android:padding="3dip"
                 android:text="Ctrl-E" />
         </TableRow>
-        
 
-        <TableRow>
 
-            <TextView
-                android:layout_column="1"
-                android:padding="3dip"
-                android:text="Quit" />
-        </TableRow>
+        <TableRow />
     </TableLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

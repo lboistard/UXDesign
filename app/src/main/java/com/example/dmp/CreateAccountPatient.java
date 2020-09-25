@@ -73,6 +73,7 @@ public class CreateAccountPatient extends AppCompatActivity {
 
 
         dbManagerPatient.insertPatient(email, password, numSecu);
+        dbManagerPatient.close();
 
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intent);
