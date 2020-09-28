@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SoinsPatientsActivity"></activity>
+        <activity android:name=".ComptePatientActivity"></activity>
+        <activity android:name=".SoinsPatientsActivity" />
         <activity android:name=".AccueilPatientActivity" />
         <activity android:name=".AccueilMedecinActivity" />
         <activity android:name=".CreateAccountMed" />
-        <activity android:name=".activity_accueil_patient.xml" />
         <activity android:name=".CreateAccountPatient" />
         <activity android:name=".LoginMedecin" />
         <activity android:name=".MainActivity">
