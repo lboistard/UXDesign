@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".CompteMedecinActivity">
+    <TextView
+        android:id="@+id/patientTextView"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/muli_extralight"
+        android:text="Compte Médecin"
+        android:textAlignment="center"
+        android:textSize="35sp" />
+
+    <ImageView
+        android:id="@+id/logoPatient"
+        android:layout_width="243dp"
+        android:layout_height="241dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="57dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        app:srcCompat="@drawable/med" />
+
+    <TextView
+        android:id="@+id/mesInfosPatient"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="-18dp"
+        android:fontFamily="@font/muli_light_italic"
+        android:gravity="right"
+        android:text="Mes Infos"
+        android:textAlignment="center"
+        android:textSize="27sp"
+        tools:ignore="RtlCompat" />
+
+
+    <TextView
+        android:id="@+id/textNumSecu"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="317dp"
+        android:layout_marginEnd="145dp"
+        android:fontFamily="@font/muli_extralight"
+        android:gravity="right"
+        android:text="N° CPS :"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/inputNumSecu"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="305dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:fontFamily="@font/muli_extralight"
+        android:hint=""
+        android:inputType="textPersonName"
+        android:textColor="#7A121212" />
+
+
+
+    <TextView
+        android:id="@+id/textEmailPatient"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="381dp"
+        android:layout_marginEnd="145dp"
+        android:fontFamily="@font/muli_extralight"
+        android:gravity="right"
+        android:text="Adresse Email :"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        tools:ignore="RtlCompat" />
+    <EditText
+        android:id="@+id/inputEmailPatient"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="369dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:fontFamily="@font/muli_extralight"
+        android:hint=""
+        android:inputType="textPersonName"
+        android:textColor="#7A121212" />
+
+    <TextView
+        android:id="@+id/textPasswordPatient"
+        android:layout_width="358dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="446dp"
+        android:layout_marginEnd="21dp"
+        android:fontFamily="@font/muli_extralight"
+        android:gravity="right"
+        android:text="Voulez-vous modifier votre mot de passe ?"
+        android:textAlignment="textStart"
+        android:textColor="#006360"
+        android:textSize="18sp"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/buttonOui"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="496dp"
+        android:layout_marginEnd="212dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/muli_semibold"
+        android:text="Yes" />
+
+    <Button
+        android:id="@+id/buttonNon"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="496dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/button_yesnomed"
+        android:fontFamily="@font/muli_semibold"
+        android:text="Non"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_yesnomed_fill"
+            android:foreground="@drawable/user"
+            android:foregroundGravity="center"
+            android:textColorLink="#FFFFFF"
+            tools:ignore="OnClick" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_yesnomed_fill"
+            android:foreground="@drawable/info"
+            android:foregroundGravity="center"
+            android:textColorLink="#FFFFFF" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_yesnomed_fill"
+            android:foreground="@drawable/home"
+            android:foregroundGravity="center"
+            android:textColorLink="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="564dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="525dp"
+        android:background="#E6E6E6"
+        android:backgroundTint="#E6E6E6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/muli_bold"
+            android:text="Notifications : "
+            android:textColor="#292424" />
+
+        <TextView
+            android:id="@+id/textRep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/muli_light_italic"
+            android:text="Votre dernière réponse  : Lorem ipsum dolor sit amet, consectetur adipisicing"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/muli_light_italic"
+            android:text="Dernière question reçu : Lorem ipsum dolor sit amet, consectetur adipisicing"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
