@@ -79,7 +79,6 @@ public class CreateAccountPatient extends AppCompatActivity {
         startActivity(intent);
     }
 
-
     //~-------------------------------------------------
     //~ Method that link to the "User login page"
     //~-------------------------------------------------
