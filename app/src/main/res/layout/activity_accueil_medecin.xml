@@ -17,7 +17,8 @@
         android:fontFamily="@font/muli_extralight"
         android:text="Dossiers"
         android:textAlignment="center"
-        android:textSize="35sp" />
+        android:textSize="35sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
 
 
     <ImageView
@@ -26,8 +27,10 @@
         android:layout_height="310dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="65dp"
-        app:srcCompat="@drawable/accueilmed"
+        app:srcCompat="@drawable/createaccount"
+        tools:ignore="ContentDescription,HardcodedText,RtlHardcoded"
         tools:layout_editor_absoluteY="69dp" />
+
 
     <LinearLayout
         android:layout_width="300dp"
@@ -46,7 +49,9 @@
             android:text="N° CPS :"
             android:textSize="12sp"
             tools:layout_editor_absoluteX="40dp"
-            tools:layout_editor_absoluteY="380dp" />
+            tools:layout_editor_absoluteY="380dp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
 
         <TextView
             android:id="@+id/numCPS"
@@ -56,7 +61,9 @@
             android:text="00 0000 0000 000"
             android:textSize="12sp"
             tools:layout_editor_absoluteX="155dp"
-            tools:layout_editor_absoluteY="380dp" />
+            tools:layout_editor_absoluteY="380dp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
     </LinearLayout>
 
     <TableLayout
@@ -85,7 +92,9 @@
                 android:gravity="center"
                 android:text="Nom"
                 android:textSize="20sp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -96,7 +105,9 @@
                 android:gravity="center"
                 android:text="Date"
                 android:textSize="20sp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -108,7 +119,9 @@
                 android:text="Action"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:layout_marginRight="5dp"></TextView>
+                android:layout_marginRight="5dp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
         </TableRow>
 
         <TableRow
@@ -126,7 +139,8 @@
                 android:layout_marginRight="5dp"
                 android:text="Dupont"
                 android:textSize="15sp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -137,7 +151,8 @@
                 android:gravity="center"
                 android:text="03/01/2020"
                 android:textSize="15sp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -156,7 +171,9 @@
                     android:scaleType="fitCenter"
                     android:padding="13dp"
                     android:tint="#FFAEAE"
-                    tools:srcCompat="@drawable/close" />
+                    tools:srcCompat="@drawable/close"
+                    tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
+
 
                 <ImageButton
                     android:layout_width="50dp"
@@ -167,7 +184,9 @@
                     android:scaleType="fitCenter"
                     android:padding="12dp"
                     android:tint="#FFAEAE"
-                    tools:srcCompat="@drawable/edit" />
+                    tools:srcCompat="@drawable/edit"
+                    tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
+
 
                 <ImageButton
                     android:layout_width="50dp"
@@ -178,7 +197,9 @@
                     android:scaleType="fitCenter"
                     android:padding="10dp"
                     android:tint="#FFAEAE"
-                    tools:srcCompat="@drawable/eye" />
+                    tools:srcCompat="@drawable/eye"
+                    tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
+
             </LinearLayout>
 
         </TableRow>
@@ -198,7 +219,8 @@
                 android:text="Mayer"
                 android:textSize="15sp"
                 android:layout_marginRight="5dp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -209,7 +231,8 @@
                 android:gravity="center"
                 android:text="01/01/2019"
                 android:textSize="15sp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -228,7 +251,9 @@
                     android:scaleType="fitCenter"
                     android:padding="13dp"
                     android:tint="#FFAEAE"
-                    tools:srcCompat="@drawable/close" />
+                    tools:srcCompat="@drawable/close"
+                    tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
+
 
                 <ImageButton
                     android:layout_width="50dp"
@@ -239,7 +264,9 @@
                     android:scaleType="fitCenter"
                     android:padding="12dp"
                     android:tint="#FFAEAE"
-                    tools:srcCompat="@drawable/edit" />
+                    tools:srcCompat="@drawable/edit"
+                    tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
+
 
                 <ImageButton
                     android:layout_width="50dp"
@@ -250,7 +277,9 @@
                     android:scaleType="fitCenter"
                     android:padding="10dp"
                     android:tint="#FFAEAE"
-                    tools:srcCompat="@drawable/eye" />
+                    tools:srcCompat="@drawable/eye"
+                    tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
+
             </LinearLayout>
 
         </TableRow>
@@ -271,7 +300,8 @@
                 android:text="Soyer"
                 android:textSize="15sp"
                 android:layout_marginRight="5dp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -282,7 +312,8 @@
                 android:gravity="center"
                 android:text="05/10/2019"
                 android:textSize="15sp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -301,7 +332,8 @@
                     android:scaleType="fitCenter"
                     android:padding="13dp"
                     android:tint="#FFAEAE"
-                    tools:srcCompat="@drawable/close" />
+                    tools:srcCompat="@drawable/close"
+                    tools:ignore="ContentDescription" />
 
                 <ImageButton
                     android:layout_width="50dp"
@@ -312,7 +344,9 @@
                     android:scaleType="fitCenter"
                     android:padding="12dp"
                     android:tint="#FFAEAE"
-                    tools:srcCompat="@drawable/edit" />
+                    tools:srcCompat="@drawable/edit"
+                    tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
+
 
                 <ImageButton
                     android:layout_width="50dp"
@@ -323,7 +357,9 @@
                     android:scaleType="fitCenter"
                     android:padding="10dp"
                     android:tint="#FFAEAE"
-                    tools:srcCompat="@drawable/eye" />
+                    tools:srcCompat="@drawable/eye"
+                    tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
+
             </LinearLayout>
 
         </TableRow>
@@ -343,8 +379,10 @@
             android:background="@drawable/button_menu"
             android:foreground="@drawable/user"
             android:foregroundGravity="center"
+            android:onClick="toMedecinAccount"
             android:textColorLink="#FFFFFF"
-            tools:ignore="OnClick" />
+            tools:ignore="ButtonStyle,ContentDescription,HardcodedText,RtlHardcoded" />
+
 
         <Button
             style="@style/Widget.AppCompat.Button.Colored"
@@ -380,7 +418,9 @@
         android:scaleType="fitCenter"
         android:padding="10dp"
         android:tint="#494FBF"
-        tools:srcCompat="@drawable/add"  />
+        tools:srcCompat="@drawable/add"
+        tools:ignore="ButtonStyle,ContentDescription,HardcodedText,RtlHardcoded" />
+
 
 
 </RelativeLayout>

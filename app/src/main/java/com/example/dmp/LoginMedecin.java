@@ -81,19 +81,20 @@ public class LoginMedecin extends AppCompatActivity {
         String cps = numCPS.getText().toString();
 
         //ask if user exist
-        String numCps = dbManagerMed.checkUserExist(email, password, cps);
+
+        //String numCps = dbManagerMed.checkUserExist(email, password, cps);
 
 
 
         //If user exist, go to next page
-        if(numCps != "false"){
+      //  if(numCps != "false"){
             numCpsFinal = cps;
 
             Intent intent = new Intent(LoginMedecin.this, AccueilMedecinActivity.class);
-            intent.putExtra("numCps", numCpsFinal);
+           // intent.putExtra("numCps", numCpsFinal);
             startActivity(intent);
 
-        }
+       // }
 
     }
 

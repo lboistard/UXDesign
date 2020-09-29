@@ -56,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         patientComponents();
 
-        dbManagerPatient = new DBManagerPatient(this);
-        dbManagerPatient.openDBPatient();
-        Cursor cursor = dbManagerPatient.fetch();
+      //  dbManagerPatient = new DBManagerPatient(this);
+       // dbManagerPatient.openDBPatient();
+        //Cursor cursor = dbManagerPatient.fetch();
     }
 
     //~-------------------------------------------------
@@ -88,14 +88,14 @@ public class MainActivity extends AppCompatActivity {
         String numSecu = numSecuPatient.getText().toString();
 
         //ask if user exist
-        String numReturn = dbManagerPatient.checkUserExist(email, password, numSecu);
-        dbManagerPatient.close();
+       // String numReturn = dbManagerPatient.checkUserExist(email, password, numSecu);
+        //dbManagerPatient.close();
 
         //If user exist, go to next page
-        if(numReturn != "false"){
-            Intent intent = new Intent(MainActivity.this, AccueilPatientActivity.class);
-            intent.putExtra("numSecu", numReturn);
-            startActivity(intent);
-        }
+        //if(numReturn != "false"){
+        Intent intent = new Intent(MainActivity.this, AccueilPatientActivity.class);
+        intent.putExtra("numSecu", "0000");
+        startActivity(intent);
+       // }
     }
 }
