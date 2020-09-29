@@ -5,135 +5,28 @@
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".SoinsPatientsActivity">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="318dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="504dp"
-        app:srcCompat="@drawable/pills"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="68dp" />
-
-    <TableLayout
-        android:layout_width="384dp"
-        android:layout_height="121dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="397dp"
-        android:layout_marginBottom="328dp"
-        android:stretchColumns="1"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="383dp">
-
-        <TableRow>
-
-            <TextView
-                android:layout_column="1"
-                android:background="#E4E4E4"
-                android:padding="3dip"
-                android:text="Rendez-vous 19/04/20" />
-
-            <TextView
-                android:background="#FFE4E4E4"
-                android:gravity="right"
-                android:padding="3dip"
-                android:text="Cardiologue " />
-        </TableRow>
-
-        <TableRow>
-
-            <TextView
-                android:layout_column="1"
-                android:backgroundTint="#46BFBFBF"
-                android:padding="3dip"
-                android:text="Bilan sanguin du 23/03/20" />
-
-            <TextView
-                android:gravity="right"
-                android:padding="3dip"
-                android:text="Laboratoire" />
-        </TableRow>
-
-        <TableRow>
-
-            <TextView
-                android:layout_column="1"
-                android:background="#FFE4E4E4"
-                android:padding="3dip"
-                android:text="Rendez-vous du 17/03/20 " />
-
-            <TextView
-                android:background="#FFE4E4E4"
-                android:gravity="right"
-                android:padding="3dip"
-                android:text="Cardiologue " />
-        </TableRow>
-
-
-        <TableRow>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:padding="3dip" />
-
-            <TextView
-                android:padding="3dip"
-                android:text="Rendez-vous du 19/02/20" />
-
-            <TextView
-                android:gravity="right"
-                android:padding="3dip"
-                android:text="Généraliste" />
-        </TableRow>
-
-
-        <TableRow />
-    </TableLayout>
+    tools:context=".BiologiePatientActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/medecinTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="524dp"
-        android:fontFamily="@font/muli_light"
-        android:text="Mes Traitements"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/muli_extralight"
+        android:text="Biologie"
         android:textAlignment="center"
-        android:textSize="36sp"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="533dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="324dp"
-        android:layout_marginEnd="-2dp"
-        android:fontFamily="@font/muli_light"
-        android:text="Mes Soins"
-        android:textAlignment="center"
-        android:textSize="36sp"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="326dp" />
-
+        android:textSize="35sp" />
 
     <TableLayout
         android:layout_width="384dp"
-        android:layout_height="136dp"
+        android:layout_height="566dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="590dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginBottom="201dp"
         android:stretchColumns="1"
         tools:layout_editor_absoluteX="40dp"
         tools:layout_editor_absoluteY="383dp">
@@ -204,8 +97,7 @@
             android:foreground="@drawable/user"
             android:foregroundGravity="center"
             android:onClick="toPatientAccount"
-            android:textColorLink="#FFFFFF"
-            tools:ignore="OnClick" />
+            android:textColorLink="#FFFFFF" />
 
         <Button
             android:id="@+id/button2"
@@ -231,6 +123,5 @@
             android:foregroundGravity="center"
             android:textColorLink="#FFFFFF" />
     </LinearLayout>
-
 
 </RelativeLayout>

@@ -12,6 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74cfe643-94fa-4396-b8d9-118c732f15c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/BiologiePatientActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_biologie_patient.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
@@ -22,12 +24,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/AccueilMedecinActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/AccueilMedecinActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/AccueilPatientActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/AccueilPatientActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/LoginMedecin.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/LoginMedecin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_accueil_medecin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_accueil_medecin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_soins_patients.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_soins_patients.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
@@ -97,14 +97,14 @@
     <property name="android.sdk.path" value="$PROJECT_DIR$/../Library/Android/sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="last_opened_file_path" value="D:/" />
-    <property name="memory.settings.postsync.last.time.stamp" value="1601276429333" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1601371617664" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="android.template.-750740034">
+    <key name="android.template.847295357">
       <recent name="com.example.dmp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -115,10 +115,13 @@
     <key name="android.template.packageName">
       <recent name="com.example.dmp" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+    <key name="android.template.-750740034">
       <recent name="com.example.dmp" />
     </key>
-    <key name="android.template.847295357">
+    <key name="android.template.640086083">
+      <recent name="com.example.dmp" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.dmp" />
     </key>
     <key name="android.template.-1832742938">
@@ -367,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601311060324</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="j'ai fais pleins de trucs je sais plus quoi mdrrr">
+      <created>1601371471730</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1601371471730</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -384,7 +394,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="init components in the createAccount class" />
     <MESSAGE value="add database creation for user" />
     <MESSAGE value="create User package and Patient class" />
     <MESSAGE value="link main activity to &quot;create an account&quot;" />
@@ -409,7 +418,8 @@
     <MESSAGE value="bug correction : closed database after every action" />
     <MESSAGE value="add account managament for patient" />
     <MESSAGE value="add compte patient layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="add compte patient layout" />
+    <MESSAGE value="j'ai fais pleins de trucs je sais plus quoi mdrrr" />
+    <option name="LAST_COMMIT_MESSAGE" value="j'ai fais pleins de trucs je sais plus quoi mdrrr" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="71" key="#DMP" timestamp="1599816404093">
@@ -465,10 +475,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="816" y="332" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600345817759" />
-    <state x="449" y="14" width="1471" height="972" key="CommitChangelistDialog2" timestamp="1601311059656">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="339" y="12" width="1471" height="972" key="CommitChangelistDialog2" timestamp="1601371471030">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="339" y="12" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1601026097353" />
+    <state x="339" y="12" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1601371471030" />
     <state x="449" y="14" width="1471" height="972" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601311059656" />
     <state x="339" y="36" key="CommitChangelistDialog2/0.25.1440.822@0.25.1440.822" timestamp="1600185316221" />
     <state x="120" y="145" width="1200" height="582" key="DiffContextDialog" timestamp="1600370975631">
@@ -527,10 +537,10 @@
     </state>
     <state x="478" y="130" key="VCS.ChangeListViewerDialog/0.0.1440.900@0.0.1440.900" timestamp="1600418967810" />
     <state x="478" y="144" key="VCS.ChangeListViewerDialog/0.25.1440.822@0.25.1440.822" timestamp="1600370997309" />
-    <state x="427" y="187" key="Vcs.Push.Dialog.v2" timestamp="1601307370414">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="320" y="162" key="Vcs.Push.Dialog.v2" timestamp="1601371480955">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="162" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601026102828" />
+    <state x="320" y="162" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601371480955" />
     <state x="427" y="187" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601307370414" />
     <state x="320" y="173" key="Vcs.Push.Dialog.v2/0.25.1440.822@0.25.1440.822" timestamp="1600185322301" />
     <state x="776" y="297" key="chooseDestDirectoryDialog" timestamp="1601308928404">

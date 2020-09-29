@@ -46,6 +46,9 @@ public class AccueilPatientActivity extends AppCompatActivity {
         Cursor cursor = dbManagerPatient.fetch();
     }
 
+    //~-------------------------------------------------
+    //~ Go to patient account management activity
+    //~-------------------------------------------------
     public void toPatientAccount(View view) {
         String de = dbManagerPatient.getPatientInfos(numeroSecu);
 
@@ -55,6 +58,9 @@ public class AccueilPatientActivity extends AppCompatActivity {
 
     }
 
+    //~-------------------------------------------------
+    //~ Go to patient "Traitements et Soins" activity
+    //~-------------------------------------------------
     public void toSoins(View view) {
 
         Intent intent = new Intent(this, SoinsPatientsActivity.class);
