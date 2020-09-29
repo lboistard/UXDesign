@@ -13,7 +13,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.dmp.Database.DBManagerMedecin;
-import com.example.dmp.Database.DBManagerPatient;
 
 public class LoginMedecin extends AppCompatActivity {
 
@@ -41,7 +40,7 @@ public class LoginMedecin extends AppCompatActivity {
         logoMedecin = findViewById(R.id.logoMedecin);
         emailMedecin = findViewById(R.id.emailMedecin);
         passwordMedecin = findViewById(R.id.passwordMedecin);
-        numCPS = findViewById(R.id.numCPS);
+        numCPS = findViewById(R.id.inputNumCps);
         buttonConnexionMedecin = findViewById(R.id.buttonConnexionMedecin);
         buttonCreationCompteMedecin = findViewById(R.id.buttonCreationCompteMedecin);
     }

@@ -8,7 +8,7 @@
     tools:context=".AccueilMedecinActivity">
 
     <TextView
-        android:id="@+id/medecinTextView"
+        android:id="@+id/textDossiers"
         android:layout_width="176dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -43,18 +43,19 @@
         android:gravity="center_vertical">
 
         <TextView
+            android:id="@+id/textNumCps"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/muli_extralight_italic"
             android:text="N° CPS :"
             android:textSize="12sp"
+            tools:ignore="HardcodedText,RtlHardcoded"
             tools:layout_editor_absoluteX="40dp"
-            tools:layout_editor_absoluteY="380dp"
-            tools:ignore="HardcodedText,RtlHardcoded" />
+            tools:layout_editor_absoluteY="380dp" />
 
 
         <TextView
-            android:id="@+id/numCPS"
+            android:id="@+id/inputNumCps"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/muli_extralight_italic"
@@ -84,6 +85,7 @@
             android:layout_marginBottom="5dp">
 
             <TextView
+                android:id="@+id/textNomTab"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
@@ -97,6 +99,7 @@
 
 
             <TextView
+                android:id="@+id/textDateTab"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="1"
@@ -110,16 +113,17 @@
 
 
             <TextView
+                android:id="@+id/textActionTab"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="2"
+                android:layout_marginRight="5dp"
                 android:background="@drawable/cell_shape_haut"
                 android:fontFamily="@font/muli_extralight"
                 android:gravity="center"
                 android:text="Action"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:layout_marginRight="5dp"
                 tools:ignore="HardcodedText,RtlHardcoded" />
 
         </TableRow>
@@ -372,6 +376,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/buttonAccountMed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
@@ -380,11 +385,11 @@
             android:foreground="@drawable/user"
             android:foregroundGravity="center"
             android:onClick="toMedecinAccount"
-            android:textColorLink="#FFFFFF"
-            tools:ignore="ButtonStyle,ContentDescription,HardcodedText,RtlHardcoded" />
+            android:textColorLink="#FFFFFF"/>
 
 
         <Button
+            android:id="@+id/buttonInfoMed"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -392,10 +397,12 @@
             android:layout_weight="1"
             android:background="@drawable/button_menu"
             android:foreground="@drawable/info"
+            android:onClick="toInfoMedecin"
             android:foregroundGravity="center"
             android:textColorLink="#FFFFFF" />
 
         <Button
+            android:id="@+id/buttonHomeMed"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -404,6 +411,7 @@
             android:background="@drawable/button_menu"
             android:foreground="@drawable/home"
             android:foregroundGravity="center"
+            android:onClick="toHomeMedecin"
             android:textColorLink="#FFFFFF" />
     </LinearLayout>
 

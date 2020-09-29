@@ -12,25 +12,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74cfe643-94fa-4396-b8d9-118c732f15c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/AccueilPatientActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/AccueilPatientActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/AccueilMedecinActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/AccueilMedecinActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/LoginMedecin.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/LoginMedecin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_accueil_medecin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_accueil_medecin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_accueil_patient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_accueil_patient.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_compte_rendu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_compte_rendu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login_medecin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login_medecin.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="46896a61" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_XL_API_29" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -378,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601372246456</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="modify layout">
+      <created>1601373521929</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1601373521930</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -395,7 +395,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create User package and Patient class" />
     <MESSAGE value="link main activity to &quot;create an account&quot;" />
     <MESSAGE value="add database management for user" />
     <MESSAGE value="add gitignore" />
@@ -420,7 +419,8 @@
     <MESSAGE value="add compte patient layout" />
     <MESSAGE value="j'ai fais pleins de trucs je sais plus quoi mdrrr" />
     <MESSAGE value="add biologie patient" />
-    <option name="LAST_COMMIT_MESSAGE" value="add biologie patient" />
+    <MESSAGE value="modify layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify layout" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="71" key="#DMP" timestamp="1599816404093">
@@ -476,10 +476,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="816" y="332" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600345817759" />
-    <state x="339" y="12" width="1471" height="972" key="CommitChangelistDialog2" timestamp="1601372245880">
+    <state x="339" y="12" width="1471" height="972" key="CommitChangelistDialog2" timestamp="1601373521460">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="339" y="12" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1601372245880" />
+    <state x="339" y="12" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1601373521460" />
     <state x="449" y="14" width="1471" height="972" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601311059656" />
     <state x="339" y="36" key="CommitChangelistDialog2/0.25.1440.822@0.25.1440.822" timestamp="1600185316221" />
     <state x="120" y="145" width="1200" height="582" key="DiffContextDialog" timestamp="1600370975631">
@@ -528,20 +528,20 @@
     </state>
     <state x="295" y="59" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600340533586" />
     <state x="221" y="72" key="SettingsEditor/0.25.1440.822@0.25.1440.822" timestamp="1600251324594" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1601307807965">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="500" height="416" key="SwitcherDM" timestamp="1601383981532">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="500" height="416" key="SwitcherDM/0.0.1440.900@0.0.1440.900" timestamp="1600612593356" />
+    <state width="500" height="416" key="SwitcherDM/0.0.1440.900@0.0.1440.900" timestamp="1601383981532" />
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1601307807965" />
     <state x="478" y="130" key="VCS.ChangeListViewerDialog" timestamp="1600418967810">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="478" y="130" key="VCS.ChangeListViewerDialog/0.0.1440.900@0.0.1440.900" timestamp="1600418967810" />
     <state x="478" y="144" key="VCS.ChangeListViewerDialog/0.25.1440.822@0.25.1440.822" timestamp="1600370997309" />
-    <state x="320" y="162" key="Vcs.Push.Dialog.v2" timestamp="1601372253308">
+    <state x="320" y="162" key="Vcs.Push.Dialog.v2" timestamp="1601373536501">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="162" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601372253308" />
+    <state x="320" y="162" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601373536501" />
     <state x="427" y="187" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601307370414" />
     <state x="320" y="173" key="Vcs.Push.Dialog.v2/0.25.1440.822@0.25.1440.822" timestamp="1600185322301" />
     <state x="776" y="297" key="chooseDestDirectoryDialog" timestamp="1601308928404">
