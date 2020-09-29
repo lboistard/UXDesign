@@ -67,4 +67,10 @@ public class AccueilPatientActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void toBiologie(View view) {
+    Intent intent = new Intent(this, BiologiePatientActivity.class);
+        startActivity(intent);
+
+    }
 }

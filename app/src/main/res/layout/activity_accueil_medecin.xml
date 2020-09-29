@@ -161,7 +161,7 @@
                 android:background="@drawable/cell_shape_bas"
                 android:layout_gravity="center">
 
-                <ImageButton
+                <ImageView
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -329,11 +329,11 @@
                     android:layout_margin="5dp"
                     android:adjustViewBounds="true"
                     android:background="#FFFFFF"
-                    android:scaleType="fitCenter"
                     android:padding="13dp"
+                    android:scaleType="fitCenter"
                     android:tint="#FFAEAE"
-                    tools:srcCompat="@drawable/close"
-                    tools:ignore="ContentDescription" />
+                    tools:ignore="ContentDescription"
+                    tools:srcCompat="@drawable/close" />
 
                 <ImageButton
                     android:layout_width="50dp"
@@ -419,8 +419,7 @@
         android:padding="10dp"
         android:tint="#494FBF"
         tools:srcCompat="@drawable/add"
-        tools:ignore="ButtonStyle,ContentDescription,HardcodedText,RtlHardcoded" />
-
+        />
 
 
 </RelativeLayout>

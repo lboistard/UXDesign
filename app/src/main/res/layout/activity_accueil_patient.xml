@@ -79,6 +79,7 @@
             android:layout_height="120dp"
             android:layout_marginLeft="15dp"
             android:fontFamily="@font/muli"
+            android:onClick="toBiologie"
             android:text="Biologie"
             android:textSize="12sp"
             tools:layout_editor_absoluteX="40dp"
