@@ -169,6 +169,7 @@
             android:background="@drawable/button_yesno"
             android:foreground="@drawable/home"
             android:foregroundGravity="center"
+            android:onClick="toPatientHome"
             android:textColorLink="#FFFFFF" />
     </LinearLayout>
 

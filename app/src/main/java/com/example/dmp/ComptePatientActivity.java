@@ -2,6 +2,7 @@ package com.example.dmp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -64,11 +65,17 @@ public class ComptePatientActivity extends AppCompatActivity {
         DialogAddDossier.FullNameListener listener = new DialogAddDossier.FullNameListener() {
             @Override
             public void fullNameEntered(String fullName) {
-                Toast.makeText(ComptePatientActivity.this, "Full name: " + fullName, Toast.LENGTH_LONG).show();
+                Toast.makeText(ComptePatientActivity.this, "" , Toast.LENGTH_SHORT).show();
             }
         };
         final DialogAddDossier dialog = new DialogAddDossier(this, listener);
 
         dialog.show();
+    }
+
+    public void toPatientHome(View view) {
+        Intent intent = new Intent(this, AccueilPatientActivity.class);
+        startActivity(intent);
+
     }
 }
