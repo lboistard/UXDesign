@@ -19,6 +19,36 @@
         android:textAlignment="center"
         android:textSize="35sp" />
 
+    <com.riyagayasen.easyaccordion.AccordionView
+        android:layout_width="409dp"
+        android:layout_height="229dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="126dp"
+        android:color="#FFAEAE"
+        app:heading="Compte rendu du 01/04/2020"
+        app:isAnimated="false"
+        app:isExpanded="true"
+        app:isPartitioned="true">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="397dp"
+            android:layout_height="153dp"
+            android:textColor="#FFFFFF"
+            android:text="Conclusion : \n Lorem ipsum dolor sit amet, consectetur adipiscing elit.Mauris hendrerit molestie erat. Phasellus nec lorem faucibus, luctus augue at, ornare purus. Donec facilisis in diam et elementum. " />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:text="Télécharger"
+            android:background="@drawable/button_download" />
+
+
+    </com.riyagayasen.easyaccordion.AccordionView>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
