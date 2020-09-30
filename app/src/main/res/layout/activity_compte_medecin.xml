@@ -7,7 +7,7 @@
     android:background="#FFFFFF"
     tools:context=".CompteMedecinActivity">
     <TextView
-        android:id="@+id/patientTextView"
+        android:id="@+id/textComptePatient"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -19,7 +19,7 @@
         android:textSize="35sp" />
 
     <ImageView
-        android:id="@+id/logoPatient"
+        android:id="@+id/logoComptePatient"
         android:layout_width="243dp"
         android:layout_height="241dp"
         android:layout_alignParentTop="true"
@@ -29,7 +29,7 @@
         app:srcCompat="@drawable/med" />
 
     <TextView
-        android:id="@+id/mesInfosPatient"
+        android:id="@+id/textInfosPatient"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -45,7 +45,7 @@
 
 
     <TextView
-        android:id="@+id/textNumSecu"
+        android:id="@+id/textNumSecuPatient"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -62,7 +62,7 @@
         tools:ignore="RtlCompat" />
 
     <EditText
-        android:id="@+id/inputNumSecu"
+        android:id="@+id/textNumSecu"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -112,7 +112,7 @@
         android:textColor="#7A121212" />
 
     <TextView
-        android:id="@+id/textPasswordPatient"
+        android:id="@+id/textPasswordPatientQuestion"
         android:layout_width="358dp"
         android:layout_height="34dp"
         android:layout_alignParentStart="true"
@@ -130,7 +130,7 @@
         tools:ignore="RtlCompat" />
 
     <Button
-        android:id="@+id/buttonOui"
+        android:id="@+id/buttonOuiForReset"
         android:layout_width="145dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -144,7 +144,7 @@
         android:text="Yes" />
 
     <Button
-        android:id="@+id/buttonNon"
+        android:id="@+id/buttonNonForReset"
         android:layout_width="145dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"

@@ -208,7 +208,7 @@
             tools:ignore="OnClick" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonInfosPatients"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -220,7 +220,7 @@
             android:textColorLink="#FFFFFF" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonHomePatient"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

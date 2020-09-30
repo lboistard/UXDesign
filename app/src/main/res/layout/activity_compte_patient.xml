@@ -6,20 +6,21 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     tools:context=".ComptePatientActivity">
+
     <TextView
-        android:id="@+id/patientTextView"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/textComptePatient"
+        android:layout_width="132dp"
+        android:layout_height="63dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="0dp"
         android:fontFamily="@font/muli_extralight"
         android:text="Compte Patient"
         android:textAlignment="center"
         android:textSize="35sp" />
 
     <ImageView
-        android:id="@+id/logoPatient"
+        android:id="@+id/logoComptePatient"
         android:layout_width="276dp"
         android:layout_height="249dp"
         android:layout_alignParentTop="true"
@@ -29,7 +30,7 @@
         app:srcCompat="@drawable/patient" />
 
     <TextView
-        android:id="@+id/mesInfosPatient"
+        android:id="@+id/textInfosPatient"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -45,7 +46,7 @@
 
 
     <TextView
-        android:id="@+id/textNumSecu"
+        android:id="@+id/textNumSecuPatient"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -62,7 +63,7 @@
         tools:ignore="RtlCompat" />
 
     <EditText
-        android:id="@+id/inputNumSecu"
+        android:id="@+id/textNumSecu"
         android:layout_width="184dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -112,7 +113,7 @@
         android:textColor="#7A121212" />
 
     <TextView
-        android:id="@+id/textPasswordPatient"
+        android:id="@+id/textPasswordPatientQuestion"
         android:layout_width="358dp"
         android:layout_height="34dp"
         android:layout_alignParentStart="true"
@@ -130,7 +131,7 @@
         tools:ignore="RtlCompat" />
 
     <Button
-        android:id="@+id/buttonOui"
+        android:id="@+id/buttonOuiForReset"
         android:layout_width="145dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -141,10 +142,10 @@
         android:layout_marginEnd="212dp"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/muli_semibold"
-        android:text="Yes" />
+        android:text="Oui" />
 
     <Button
-        android:id="@+id/buttonNon"
+        android:id="@+id/buttonNonForReset"
         android:layout_width="145dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -199,6 +200,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/layoutNotificationsPatient"
         android:layout_width="wrap_content"
         android:layout_height="210dp"
         android:layout_alignParentStart="true"

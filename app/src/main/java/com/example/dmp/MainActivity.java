@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cursoradapter.widget.SimpleCursorAdapter;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,7 +11,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.dmp.Database.DBManagerMedecin;
 import com.example.dmp.Database.DBManagerPatient;
 
 
@@ -37,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
     //~-------------------------------------------------
     public void patientComponents(){
         toMedecin = findViewById(R.id.toMedecin);
-        patientTextView = findViewById(R.id.patientTextView);
-        logoPatient = findViewById(R.id.logoPatient);
+        patientTextView = findViewById(R.id.textComptePatient);
+        logoPatient = findViewById(R.id.logoComptePatient);
         emailPatient = findViewById(R.id.emailPatient);
         passwordPatient = findViewById(R.id.passwordPatient);
         numSecuPatient = findViewById(R.id.numSecuPatient);

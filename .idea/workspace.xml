@@ -12,18 +12,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74cfe643-94fa-4396-b8d9-118c732f15c5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/AccueilMedecinActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/AccueilMedecinActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/AccueilPatientActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/AccueilPatientActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/ComptePatientActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/ComptePatientActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/LoginMedecin.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/LoginMedecin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_accueil_medecin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_accueil_medecin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_accueil_patient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_accueil_patient.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_biologie_patient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_biologie_patient.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_compte_medecin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_compte_medecin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_compte_patient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_compte_patient.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_compte_rendu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_compte_rendu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_account_med.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_account_med.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_account_patient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_account_patient.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login_medecin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login_medecin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_soins_patients.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_soins_patients.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_XL_API_29" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="46896a61" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -51,8 +73,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="layoutResourceFile" />
-        <option value="Class" />
         <option value="resourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -378,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601373521930</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="declare components of medecin + create functions linked to layout">
+      <created>1601384477851</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1601384477851</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -395,7 +424,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="link main activity to &quot;create an account&quot;" />
     <MESSAGE value="add database management for user" />
     <MESSAGE value="add gitignore" />
     <MESSAGE value="add git ignore" />
@@ -420,7 +448,8 @@
     <MESSAGE value="j'ai fais pleins de trucs je sais plus quoi mdrrr" />
     <MESSAGE value="add biologie patient" />
     <MESSAGE value="modify layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify layout" />
+    <MESSAGE value="declare components of medecin + create functions linked to layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="declare components of medecin + create functions linked to layout" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="71" key="#DMP" timestamp="1599816404093">
@@ -462,10 +491,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="329" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1600419648338" />
-    <state x="518" y="230" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600690394003">
+    <state x="518" y="230" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601455310504">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="518" y="230" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1600690394003" />
+    <state x="518" y="230" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1601455310504" />
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600359628609" />
     <state x="540" y="274" key="AndroidCreateResourceFileDialog" timestamp="1601311644575">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -476,10 +505,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="816" y="332" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600345817759" />
-    <state x="339" y="12" width="1471" height="972" key="CommitChangelistDialog2" timestamp="1601373521460">
+    <state x="339" y="12" width="1471" height="972" key="CommitChangelistDialog2" timestamp="1601384477518">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="339" y="12" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1601373521460" />
+    <state x="339" y="12" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1601384477518" />
     <state x="449" y="14" width="1471" height="972" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601311059656" />
     <state x="339" y="36" key="CommitChangelistDialog2/0.25.1440.822@0.25.1440.822" timestamp="1600185316221" />
     <state x="120" y="145" width="1200" height="582" key="DiffContextDialog" timestamp="1600370975631">
@@ -538,20 +567,20 @@
     </state>
     <state x="478" y="130" key="VCS.ChangeListViewerDialog/0.0.1440.900@0.0.1440.900" timestamp="1600418967810" />
     <state x="478" y="144" key="VCS.ChangeListViewerDialog/0.25.1440.822@0.25.1440.822" timestamp="1600370997309" />
-    <state x="320" y="162" key="Vcs.Push.Dialog.v2" timestamp="1601373536501">
+    <state x="320" y="162" key="Vcs.Push.Dialog.v2" timestamp="1601384483765">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="162" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601373536501" />
+    <state x="320" y="162" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601384483765" />
     <state x="427" y="187" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601307370414" />
     <state x="320" y="173" key="Vcs.Push.Dialog.v2/0.25.1440.822@0.25.1440.822" timestamp="1600185322301" />
     <state x="776" y="297" key="chooseDestDirectoryDialog" timestamp="1601308928404">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="776" y="297" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601308928404" />
-    <state x="120" y="145" width="1200" height="582" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1600258193517">
+    <state x="120" y="131" width="1200" height="638" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1601452620334">
       <screen x="0" y="25" width="1440" height="822" />
     </state>
-    <state x="120" y="145" width="1200" height="582" key="com.android.tools.idea.avdmanager.AvdListDialog/0.25.1440.822@0.25.1440.822" timestamp="1600258193517" />
+    <state x="120" y="131" width="1200" height="638" key="com.android.tools.idea.avdmanager.AvdListDialog/0.25.1440.822@0.25.1440.822" timestamp="1601452620334" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1600763258296">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

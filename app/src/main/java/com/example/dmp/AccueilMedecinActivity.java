@@ -2,9 +2,9 @@ package com.example.dmp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -26,12 +26,12 @@ public class AccueilMedecinActivity extends AppCompatActivity {
     private void initComponents(){
 
         textDossiers = (TextView)findViewById(R.id.textDossiers);
-        textNumCps = (TextView)findViewById(R.id.textNumCps);
+        textNumCps = (TextView)findViewById(R.id.textNumSecu);
         inputNumCps = (TextView)findViewById(R.id.inputNumCps);
         textNomTab = (TextView)findViewById(R.id.textNomTab);
         textDateTab = (TextView)findViewById(R.id.textDateTab);
         textActionTab = (TextView)findViewById(R.id.textActionTab);
-        logoMedecin = (ImageView)findViewById(R.id.logoMedecin);
+        logoMedecin = (ImageView)findViewById(R.id.logoAccueilPatient);
         buttonAccountMed = (Button)findViewById(R.id.buttonAccountMed);
         buttonInfoMed = (Button)findViewById(R.id.buttonInfoMed);
         buttonHomeMed = (Button)findViewById(R.id.buttonHomeMed);   
@@ -75,5 +75,12 @@ public class AccueilMedecinActivity extends AppCompatActivity {
     public void toHomeMedecin(View view) {
         Intent intent = new Intent(this, LoginMedecin.class);
         startActivity(intent);
+    }
+
+    //~-------------------------------------------------
+    //~ Open a dialog to add a "Dossier patient"
+    //~-------------------------------------------------
+    public void openAdd(View view) {
+
     }
 }

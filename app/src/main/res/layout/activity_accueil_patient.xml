@@ -8,7 +8,7 @@
     tools:context=".AccueilPatientActivity">
 
     <TextView
-        android:id="@+id/medecinTextView"
+        android:id="@+id/textPatient"
         android:layout_width="176dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -21,13 +21,13 @@
 
 
     <ImageView
-        android:id="@+id/logoMedecin"
+        android:id="@+id/logoAccueilPatient"
         android:layout_width="365dp"
         android:layout_height="324dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="68dp"
-        app:srcCompat="@drawable/office_worker_4x"
+        app:srcCompat="@drawable/patients"
         tools:layout_editor_absoluteY="69dp" />
 
     <LinearLayout
@@ -41,7 +41,7 @@
         android:gravity="center_vertical">
 
         <TextView
-            android:id="@+id/textNumCps"
+            android:id="@+id/textNumSecu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/muli_extralight_italic"
@@ -51,7 +51,7 @@
             tools:layout_editor_absoluteY="380dp" />
 
         <TextView
-            android:id="@+id/TextNumeroS"
+            android:id="@+id/inputNumSecu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/muli_extralight_italic"
@@ -116,6 +116,7 @@
             android:layout_marginLeft="15dp"
             android:fontFamily="@font/muli"
             android:text="Compte rendus"
+            android:onClick="toCompteRendus"
             android:textSize="12sp"
             tools:layout_editor_absoluteX="40dp"
             tools:layout_editor_absoluteY="420dp" />
@@ -153,7 +154,7 @@
             android:textColorLink="#FFFFFF" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonInfosPatients"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -165,7 +166,7 @@
             android:textColorLink="#FFFFFF" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonHomePatient"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
