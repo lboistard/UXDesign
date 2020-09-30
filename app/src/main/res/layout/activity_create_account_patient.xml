@@ -19,6 +19,7 @@
         android:fontFamily="@font/muli_extralight"
         android:onClick="toPatient"
         android:text="Déjà un compte ?"
+
         android:textAllCaps="false"
         android:textColor="#03A9F4" />
 
@@ -72,7 +73,7 @@
         android:layout_marginBottom="36dp"
         android:ems="10"
         android:fontFamily="@font/muli_extralight"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:hint="Password again"
         android:textColor="#7A121212" />
 
@@ -86,9 +87,9 @@
         android:layout_marginTop="381dp"
         android:layout_marginEnd="58dp"
         android:layout_marginBottom="36dp"
+        android:inputType="textPassword"
         android:ems="10"
         android:fontFamily="@font/muli_extralight"
-        android:inputType="textPersonName"
         android:hint="Password"
         android:textColor="#7A121212" />
 

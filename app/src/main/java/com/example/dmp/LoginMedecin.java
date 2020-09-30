@@ -36,8 +36,8 @@ public class LoginMedecin extends AppCompatActivity {
     //~-------------------------------------------------
     public void medicalComponents(){
         toPatient = findViewById(R.id.toPatient);
-        medecinTextView = findViewById(R.id.medecinTextView);
-        logoMedecin = findViewById(R.id.logoMedecin);
+        medecinTextView = findViewById(R.id.textPatient);
+        logoMedecin = findViewById(R.id.logoAccueilPatient);
         emailMedecin = findViewById(R.id.emailMedecin);
         passwordMedecin = findViewById(R.id.passwordMedecin);
         numCPS = findViewById(R.id.inputNumCps);

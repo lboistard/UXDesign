@@ -9,7 +9,7 @@ tools:context=".MainActivity">
 
 
     <TextView
-        android:id="@+id/patientTextView"
+        android:id="@+id/textComptePatient"
         android:layout_width="176dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -21,7 +21,7 @@ tools:context=".MainActivity">
         android:textSize="35sp" />
 
     <ImageView
-        android:id="@+id/logoPatient"
+        android:id="@+id/logoComptePatient"
         android:layout_width="330dp"
         android:layout_height="327dp"
         android:layout_alignParentTop="true"
@@ -42,7 +42,7 @@ tools:context=".MainActivity">
         android:ems="10"
         android:fontFamily="@font/muli_extralight"
         android:hint="Password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:textColor="#7A121212" />
 
     <EditText

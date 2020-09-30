@@ -22,7 +22,7 @@
 
 
     <ImageView
-        android:id="@+id/logoMedecin"
+        android:id="@+id/logoAccueilPatient"
         android:layout_width="match_parent"
         android:layout_height="310dp"
         android:layout_alignParentTop="true"
@@ -43,7 +43,7 @@
         android:gravity="center_vertical">
 
         <TextView
-            android:id="@+id/textNumCps"
+            android:id="@+id/textNumSecu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/muli_extralight_italic"
@@ -415,19 +415,18 @@
             android:textColorLink="#FFFFFF" />
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="53dp"
-        android:layout_height="57dp"
-        android:layout_marginLeft="340dp"
-        android:layout_marginTop="390dp"
-        android:adjustViewBounds="true"
-        android:background="#FFFFFF"
-        android:scaleType="fitCenter"
-        android:padding="10dp"
-        android:tint="#494FBF"
-        tools:srcCompat="@drawable/add"
-        />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="409dp"
+        android:layout_marginEnd="13dp"
+        android:background="@drawable/add"
+        android:backgroundTint="#FF5050"
+        android:onClick="openAdd" />
 
 
 </RelativeLayout>
