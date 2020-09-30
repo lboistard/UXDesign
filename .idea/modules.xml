@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DMP.iml" filepath="$PROJECT_DIR$/DMP.iml" group="DMP" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/C:/PRO/UXDesign/easyaccordion/UXDesign-easyaccordion.iml" filepath="$PROJECT_DIR$/.idea/modules/C:/PRO/UXDesign/easyaccordion/UXDesign-easyaccordion.iml" group="DMP/easyaccordion" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="DMP/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/easyaccordion/easyaccordion.iml" filepath="$PROJECT_DIR$/.idea/modules/easyaccordion/easyaccordion.iml" group="DMP/easyaccordion" />
     </modules>
   </component>
 </project>

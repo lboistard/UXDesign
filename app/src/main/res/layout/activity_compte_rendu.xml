@@ -65,7 +65,8 @@
             android:foreground="@drawable/user"
             android:foregroundGravity="center"
             android:onClick="toPatientAccount"
-            android:textColorLink="#FFFFFF" />
+            android:textColorLink="#FFFFFF"
+            tools:ignore="OnClick" />
 
         <Button
             style="@style/Widget.AppCompat.Button.Colored"

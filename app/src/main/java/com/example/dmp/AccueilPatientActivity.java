@@ -54,7 +54,9 @@ public class AccueilPatientActivity extends AppCompatActivity {
 
     }
 
-    public void toCompteRendus(View view) {
 
+    public void toCompteRendus(View view) {
+        Intent intent = new Intent(this, CompteRenduPatient.class);
+        startActivity(intent);
     }
 }
