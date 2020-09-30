@@ -3,8 +3,16 @@ package com.example.dmp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.dmp.Dialogs.DialogAddDossier;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class ComptePatientActivity extends AppCompatActivity {
 
@@ -40,5 +48,27 @@ public class ComptePatientActivity extends AppCompatActivity {
         setContentView(R.layout.activity_compte_patient);
 
         initComponents();
+    }
+
+    public void toModifyPassword(View view) {
+
+        this.textPasswordPatientQuestion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonOpenDialogClicked();
+            }
+        });
+    }
+
+    private void buttonOpenDialogClicked()  {
+        DialogAddDossier.FullNameListener listener = new DialogAddDossier.FullNameListener() {
+            @Override
+            public void fullNameEntered(String fullName) {
+                Toast.makeText(ComptePatientActivity.this, "Full name: " + fullName, Toast.LENGTH_LONG).show();
+            }
+        };
+        final DialogAddDossier dialog = new DialogAddDossier(this, listener);
+
+        dialog.show();
     }
 }

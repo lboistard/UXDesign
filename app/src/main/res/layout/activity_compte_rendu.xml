@@ -31,7 +31,7 @@
         app:heading="Compte rendu du 01/04/2020"
         app:isAnimated="false"
         app:isExpanded="true"
-        app:isPartitioned="true">
+        app:isPartitioned="true" >
 
         <TextView
             android:id="@+id/textView"

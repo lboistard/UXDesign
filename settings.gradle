@@ -2,4 +2,5 @@ rootProject.name='DMP'
 include ':app'
 include ':app', ':easyaccordion'
 
-project (':easyaccordion').projectDir = new File('C:/PRO/UXDesign/easyaccordion')
+project (':easyaccordion').projectDir = new File('/Users/lucasboistard/StudioProjects/UXDesign/easyaccordion')
+

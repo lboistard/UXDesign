@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.dmp.Dialogs.DialogAddDossier;
+
 public class AccueilMedecinActivity extends AppCompatActivity {
 
     //~-------------------------------------------------
@@ -81,6 +83,13 @@ public class AccueilMedecinActivity extends AppCompatActivity {
     //~ Open a dialog to add a "Dossier patient"
     //~-------------------------------------------------
     public void openAdd(View view) {
+        openDialog();
+
+    }
+
+
+    private void openDialog() {
+
 
     }
 }
