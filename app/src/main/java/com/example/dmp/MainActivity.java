@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cursoradapter.widget.SimpleCursorAdapter;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,7 +12,10 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.dmp.Database.DBManagerInfosPatient;
 import com.example.dmp.Database.DBManagerPatient;
+
+import java.util.HashMap;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -20,8 +24,12 @@ public class MainActivity extends AppCompatActivity {
     //~ Class/Object declaration
     //~-------------------------------------------------
     private DBManagerPatient dbManagerPatient;
+    private DBManagerInfosPatient dbInfosPatient;
     private SimpleCursorAdapter adapter;
 
+
+    String bioDate;
+    String datas;
     //~-------------------------------------------------
     //~ Components declaration
     //~-------------------------------------------------
@@ -54,8 +62,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         patientComponents();
 
-      //  dbManagerPatient = new DBManagerPatient(this);
-       // dbManagerPatient.openDBPatient();
+        dbInfosPatient = new DBManagerInfosPatient(this);
+        dbInfosPatient.openDBInfosPatient();
+
+       //bioDate = dbInfosPatient.getBioInfos("1");
+
+
+        //datas = dbInfosPatient.getCompteRendusInfos("2");
+
+
+        //dbManagerPatient = new DBManagerPatient(this);
+        //dbManagerPatient.openDBPatient();
         //Cursor cursor = dbManagerPatient.fetch();
     }
 

@@ -49,7 +49,7 @@ public class DatabaseInfosPatient extends SQLiteOpenHelper {
             " " + SOINS_CONTENT + " TEXT NOT NULL," +
             " " + COMPTE_RENDU_DATE + " TEXT NOT NULL," +
             " " + COMPTE_RENDU_CONTENT + " TEXT NOT NULL," +
-            " " + PATIENT_ID + " INTEGER NOT NULL UNIQUE);";
+            " " + PATIENT_ID + " TEXT NOT NULL);";
 
 
     //~-------------------------------------------------
