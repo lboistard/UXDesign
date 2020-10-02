@@ -26,11 +26,11 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="126dp"
+        android:layout_marginTop="100dp"
         android:color="#FFAEAE"
-        app:heading="Compte rendu du 01/04/2020"
+        app:heading="Compte rendu"
         app:isAnimated="false"
-        app:isExpanded="true"
+        app:isExpanded="false"
         app:isPartitioned="true" >
 
         <TextView
@@ -41,9 +41,11 @@
             android:text="Conclusion : \n Lorem ipsum dolor sit amet, consectetur adipiscing elit.Mauris hendrerit molestie erat. Phasellus nec lorem faucibus, luctus augue at, ornare purus. Donec facilisis in diam et elementum. " />
 
         <Button
+            android:id="@+id/textDownload"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="90dp"
+            android:textColor="#606060"
             android:text="Télécharger"
             android:background="@drawable/button_download" />
 
@@ -65,11 +67,11 @@
             android:foreground="@drawable/user"
             android:foregroundGravity="center"
             android:onClick="toPatientAccount"
+            style="?attr/materialButtonOutlinedStyle"
             android:textColorLink="#FFFFFF"
             tools:ignore="OnClick" />
 
         <Button
-            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
@@ -77,15 +79,17 @@
             android:background="@drawable/button_menu"
             android:foreground="@drawable/info"
             android:foregroundGravity="center"
+            style="?attr/materialButtonOutlinedStyle"
             android:textColorLink="#FFFFFF" />
 
         <Button
-            style="@style/Widget.AppCompat.Button.Colored"
+            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:layout_weight="1"
             android:background="@drawable/button_menu"
+            android:backgroundTint="#FFFFFF"
             android:foreground="@drawable/home"
             android:foregroundGravity="center"
             android:textColorLink="#FFFFFF" />

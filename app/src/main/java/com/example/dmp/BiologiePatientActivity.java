@@ -55,12 +55,17 @@ public class BiologiePatientActivity extends AppCompatActivity {
     //~ Go to patient account management activity
     //~-------------------------------------------------
     public void toPatientAccount(View view) {
-        Intent intent = new Intent(getApplicationContext(), AccueilPatientActivity.class);
+        Intent intent = new Intent(getApplicationContext(), ComptePatientActivity.class);
         startActivity(intent);
     }
 
     public void showDataBase_elements(View view) {
 
 
+    }
+
+    public void toHomePatient(View view) {
+        Intent intent = new Intent(getApplicationContext(), AccueilPatientActivity.class);
+        startActivity(intent);
     }
 }
