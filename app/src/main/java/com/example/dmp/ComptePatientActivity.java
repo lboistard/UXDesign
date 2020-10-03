@@ -24,13 +24,18 @@ public class ComptePatientActivity extends AppCompatActivity {
 	textEmailPatient, inputEmailPatient, textPasswordPatientQuestion;
 	ImageView logoComptePatient;
 	Dialog epicDial ;
-
 	Button cancel, ok ,buttonComments ;
 
+    //~-------------------------------------------------
+    //~ Global Variables (intent)
+    //~-------------------------------------------------
+    String NUMSECU;
+    Intent intent;
 
 
 
-	//~-------------------------------------------------
+
+    //~-------------------------------------------------
     //~ Window components attribution
     //~-------------------------------------------------
     private void initComponents(){
@@ -54,6 +59,11 @@ public class ComptePatientActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_compte_patient);
         initComponents();
+
+        intent = getIntent();
+        NUMSECU = intent.getExtras().getString("NUMSECU");
+
+        //ask db for values
 
 
         buttonComments.setOnClickListener(new View.OnClickListener() {

@@ -28,6 +28,12 @@ public class AccueilPatientActivity extends AppCompatActivity {
     ImageView logoAccueilPatient;
 
     //~-------------------------------------------------
+    //~ Global Variables (intent)
+    //~-------------------------------------------------
+    String NUMSECU;
+    Intent intent;
+
+    //~-------------------------------------------------
     //~ Components init method
     //~-------------------------------------------------
     public void initComponents(){
@@ -55,10 +61,20 @@ public class AccueilPatientActivity extends AppCompatActivity {
 
         initComponents();
 
-        buttonCommentsPatient.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
+        intent = getIntent();
+        NUMSECU = intent.getExtras().getString("NUMSECU");
+
+        inputNumSecu.setText(NUMSECU);
+
+
+        //~--------------------------
+        //~ click on comments section
+        //~--------------------------
+        buttonCommentsPatient.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view){
                 MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(AccueilPatientActivity.this);
                 builder.setTitle("Un commentaire ?");
                 builder.setMessage("Vous êtes sur le point d'être redirigé vers notre page commentaires, "+"" +
@@ -112,8 +128,6 @@ public class AccueilPatientActivity extends AppCompatActivity {
                 builder.show();
             }
         });
-       
-        Intent intent = getIntent();
 
     }
 
@@ -139,6 +153,7 @@ public class AccueilPatientActivity extends AppCompatActivity {
     public void toPatientAccount(View view) {
 
         Intent intent = new Intent(this, ComptePatientActivity.class);
+        intent.putExtra("NUMSECU", NUMSECU);
         startActivity(intent);
     }
 
@@ -152,7 +167,7 @@ public class AccueilPatientActivity extends AppCompatActivity {
     }
 
     //~-------------------------------------------------
-    //~ Go to patient Soins
+    //~ Go to patient Biologie
     //~-------------------------------------------------
     public void toBiologie(View view) {
         Intent intent = new Intent(this, BiologiePatientActivity.class);
