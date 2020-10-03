@@ -68,8 +68,40 @@ public class ComptePatientActivity extends AppCompatActivity {
                 builder.show();
             }
         });
+
+        textPasswordPatientQuestion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(ComptePatientActivity.this);
+                builder.setTitle("Changement de mot de passe ?");
+                builder.setMessage("Etes-vous sur de vouloir ajouter un commentaire ?");
+
+
+
+                builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+
+                    }
+                });
+                builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        toPassword();
+                    }
+                });
+                builder.show();
+            }
+        });
     }
 
+
+    public void toPassword(){
+        Intent intent = new Intent(this, PasswordChange.class);
+        startActivity(intent);
+    }
 
     //~-------------------------------------------------
     //~ Components declaration

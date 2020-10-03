@@ -2,7 +2,6 @@ package com.example.dmp.Dialogs;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -11,12 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.dmp.AccueilPatientActivity;
-import com.example.dmp.ComptePatientActivity;
 import com.example.dmp.R;
-import com.example.dmp.SoinsPatientsActivity;
 
 public class ChangePasswordDialog extends Dialog {
 
@@ -67,7 +61,7 @@ public class ChangePasswordDialog extends Dialog {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.dialog_change_password_patient);
+        setContentView(R.layout.activity_password_change_patient);
         changePasswordComponents();
 
         //if Ok is pressed

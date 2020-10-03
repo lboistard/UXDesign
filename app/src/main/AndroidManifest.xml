@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".CompteRenduActivity" />
+        <activity android:name=".PasswordChange" />
         <activity android:name=".BiologiePatientActivity" />
         <activity android:name=".CompteMedecinActivity" />
         <activity android:name=".ComptePatientActivity" />
