@@ -195,8 +195,9 @@
         android:orientation="horizontal">
 
         <Button
+
             style="?attr/materialButtonOutlinedStyle"
-            android:id="@+id/patientAccountButton"
+            android:id="@+id/toPatientAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
@@ -206,8 +207,7 @@
             android:foregroundGravity="center"
             android:onClick="toPatientAccount"
             app:backgroundTint="#F4F4F4"
-            android:textColorLink="#FFFFFF"
-            tools:ignore="OnClick" />
+            android:textColorLink="#FFFFFF" />
 
         <Button
             android:id="@+id/buttonInfosPatients"
@@ -228,12 +228,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
-            app:backgroundTint="#F4F4F4"
             android:layout_weight="1"
             android:background="@drawable/button_menu"
             android:foreground="@drawable/home"
             android:foregroundGravity="center"
-            android:textColorLink="#FFFFFF" />
+            android:onClick="toAccueilPatient"
+            android:textColorLink="#FFFFFF"
+            app:backgroundTint="#F4F4F4" />
     </LinearLayout>
 
 

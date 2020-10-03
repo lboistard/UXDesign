@@ -108,7 +108,7 @@ public class AccueilPatientActivity extends AppCompatActivity {
     //~ Go to patient "Traitements et Soins" activity
     //~-------------------------------------------------
     public void toSoins(View view) {
-        Intent intent = new Intent(this, PasswordChange.class);
+        Intent intent = new Intent(this, SoinsPatientsActivity.class);
         startActivity(intent);
 
     }

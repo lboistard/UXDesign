@@ -68,8 +68,7 @@
             android:foregroundGravity="center"
             android:onClick="toPatientAccount"
             style="?attr/materialButtonOutlinedStyle"
-            android:textColorLink="#FFFFFF"
-            tools:ignore="OnClick" />
+            android:textColorLink="#FFFFFF" />
 
         <Button
             android:layout_width="wrap_content"
@@ -92,6 +91,7 @@
             android:backgroundTint="#FFFFFF"
             android:foreground="@drawable/home"
             android:foregroundGravity="center"
+            android:onClick="toAccueilPatient"
             android:textColorLink="#FFFFFF" />
     </LinearLayout>
 
