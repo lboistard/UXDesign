@@ -136,27 +136,16 @@
         android:layout_alignParentBottom="true"
         android:orientation="horizontal">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="2dp"
-            android:layout_weight="1"
-            android:background="@drawable/button_yesno"
-            android:foreground="@drawable/user"
-            android:foregroundGravity="center"
-            android:textColorLink="#FFFFFF"
-            style="?attr/materialButtonOutlinedStyle"
-            tools:ignore="OnClick" />
 
         <Button
-            android:id="@+id/buttonInfo"
+            android:id="@+id/buttonComments"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:layout_weight="1"
             android:background="@drawable/button_yesno"
-            android:foreground="@drawable/info"
+            android:foreground="@drawable/chat"
             android:foregroundGravity="center"
             android:textColorLink="#FFFFFF" />
 

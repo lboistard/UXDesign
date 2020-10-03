@@ -31,7 +31,7 @@ public class BiologiePatientActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_biologie_patient);
 
-        buttonInfosPatients = findViewById(R.id.buttonInfosPatients);
+        buttonInfosPatients = findViewById(R.id.buttonCommentsPatient);
 
         //db
         dbManagerInfosPatient = new DBManagerInfosPatient(this);

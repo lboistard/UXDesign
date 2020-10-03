@@ -1,13 +1,11 @@
 package com.example.dmp;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -27,7 +25,7 @@ public class ComptePatientActivity extends AppCompatActivity {
 	ImageView logoComptePatient;
 	Dialog epicDial ;
 
-	Button cancel, ok ,buttonInfo ;
+	Button cancel, ok ,buttonComments ;
 
 
 
@@ -45,7 +43,7 @@ public class ComptePatientActivity extends AppCompatActivity {
         inputEmailPatient = (TextView)findViewById(R.id.inputEmailPatient);
         textPasswordPatientQuestion = (TextView)findViewById(R.id.textPasswordPatientQuestion);
         logoComptePatient = (ImageView)findViewById(R.id.logoComptePatient);
-        buttonInfo = (Button) findViewById(R.id.buttonInfo);
+        buttonComments = (Button) findViewById(R.id.buttonComments);
     }
 
 	//~-------------------------------------------------
@@ -58,16 +56,34 @@ public class ComptePatientActivity extends AppCompatActivity {
         initComponents();
 
 
-        buttonInfo.setOnClickListener(new View.OnClickListener() {
+        buttonComments.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(ComptePatientActivity.this);
-                builder.setTitle("Ajout");
-                builder.setMessage("Etes-vous sur de vouloir ajouter un commentaire ?");
+                builder.setTitle("Un commentaire ?");
+                builder.setMessage("Vous êtes sur le point d'être redirigé vers notre page commentaires, "+"" +
+                        "cliquez sui 'oui' si vous souhaitez être redirigé");
+
+                builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        toCommentSection();
+                    }
+                });
+
+                builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                });
+
                 builder.show();
             }
         });
+
+
 
         textPasswordPatientQuestion.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -139,5 +155,11 @@ public class ComptePatientActivity extends AppCompatActivity {
     public void toPatientHome(View view) {
         Intent intent = new Intent(this, AccueilPatientActivity.class);
         startActivity(intent);
+    }
+
+    public void toCommentSection() {
+        Intent intent = new Intent(this, CommentairesPatientsActivity.class);
+        startActivity(intent);
+
     }
 }

@@ -23,7 +23,7 @@ public class AccueilPatientActivity extends AppCompatActivity {
     //~-------------------------------------------------
     //~ Components Declaration
     //~-------------------------------------------------
-    Button buttonDecoPatient, buttonBiologie, buttonImagerieMedical, buttonCompteRendu, buttonTraitement;
+    Button buttonDecoPatient, buttonBiologie, buttonImagerieMedical, buttonCompteRendu, buttonTraitement, buttonCommentsPatient;
     TextView textPatient, textNumSecu, inputNumSecu;
     ImageView logoAccueilPatient;
 
@@ -41,6 +41,7 @@ public class AccueilPatientActivity extends AppCompatActivity {
         textNumSecu = findViewById(R.id.textNumSecu);
         inputNumSecu = findViewById(R.id.inputNumSecu);
         logoAccueilPatient = findViewById(R.id.logoAccueilPatient);
+        buttonCommentsPatient = findViewById(R.id.buttonCommentsPatient);
     }
 
     //~-------------------------------------------------
@@ -53,6 +54,35 @@ public class AccueilPatientActivity extends AppCompatActivity {
         setContentView(R.layout.activity_accueil_patient);
 
         initComponents();
+
+        buttonCommentsPatient.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(AccueilPatientActivity.this);
+                builder.setTitle("Un commentaire ?");
+                builder.setMessage("Vous êtes sur le point d'être redirigé vers notre page commentaires, "+"" +
+                        "cliquez sui 'oui' si vous souhaitez être redirigé");
+
+                builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        toComments();
+                    }
+                });
+
+                builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                });
+
+                builder.show();
+            }
+        });
+
+
 
 
         //~-----------------
@@ -85,6 +115,14 @@ public class AccueilPatientActivity extends AppCompatActivity {
        
         Intent intent = getIntent();
 
+    }
+
+    //~-------------------------------------------------
+    //~ Go to patient Comments Section
+    //~-------------------------------------------------
+    public void toComments(){
+        Intent intent = new Intent(this, CommentairesPatientsActivity.class);
+        startActivity(intent);
     }
 
     //~-------------------------------------------------
