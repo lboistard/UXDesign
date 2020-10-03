@@ -129,4 +129,12 @@ public class AccueilPatientActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CompteRenduActivity.class);
         startActivity(intent);
     }
+
+    //~-------------------------------------------------
+    //~ Go to patient Imagerie Patient activity
+    //~-------------------------------------------------
+    public void toImageriePatient(View view) {
+        Intent intent = new Intent(this, ImageriePatientActivity.class);
+        startActivity(intent);
+    }
 }

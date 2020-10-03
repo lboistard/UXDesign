@@ -91,12 +91,13 @@
             android:id="@+id/buttonImagerieMedical"
             android:layout_width="180dp"
             android:layout_height="120dp"
-            android:textColor="#858585"
             android:layout_marginLeft="20dp"
             android:fontFamily="@font/muli"
+            android:onClick="toImageriePatient"
             android:text="Imagerie Médicale"
-            app:backgroundTint="#F4F4F4"
+            android:textColor="#858585"
             android:textSize="12sp"
+            app:backgroundTint="#F4F4F4"
             tools:layout_editor_absoluteX="230dp"
             tools:layout_editor_absoluteY="420dp" />
 
