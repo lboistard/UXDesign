@@ -108,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
         //if(numReturn != "false"){
         Intent intent = new Intent(MainActivity.this, AccueilPatientActivity.class);
         intent.putExtra("NUMSECU", "0000");
+        intent.putExtra("EMAIL", "test@gmail.com");
         startActivity(intent);
        // }
     }

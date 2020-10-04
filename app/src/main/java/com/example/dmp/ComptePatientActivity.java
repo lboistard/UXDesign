@@ -30,6 +30,7 @@ public class ComptePatientActivity extends AppCompatActivity {
     //~ Global Variables (intent)
     //~-------------------------------------------------
     String NUMSECU;
+    String EMAIL;
     Intent intent;
 
 
@@ -62,7 +63,10 @@ public class ComptePatientActivity extends AppCompatActivity {
 
         intent = getIntent();
         NUMSECU = intent.getExtras().getString("NUMSECU");
+        EMAIL = intent.getExtras().getString("EMAIL");
 
+        inputNumSecu.setText(NUMSECU);
+        inputEmailPatient.setText(EMAIL);
         //ask db for values
 
 

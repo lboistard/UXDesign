@@ -31,6 +31,7 @@ public class AccueilPatientActivity extends AppCompatActivity {
     //~ Global Variables (intent)
     //~-------------------------------------------------
     String NUMSECU;
+    String EMAIL;
     Intent intent;
 
     //~-------------------------------------------------
@@ -64,6 +65,7 @@ public class AccueilPatientActivity extends AppCompatActivity {
 
         intent = getIntent();
         NUMSECU = intent.getExtras().getString("NUMSECU");
+        EMAIL = intent.getExtras().getString("EMAIL");
 
         inputNumSecu.setText(NUMSECU);
 
@@ -154,6 +156,7 @@ public class AccueilPatientActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, ComptePatientActivity.class);
         intent.putExtra("NUMSECU", NUMSECU);
+        intent.putExtra("EMAIL", EMAIL);
         startActivity(intent);
     }
 
@@ -162,6 +165,8 @@ public class AccueilPatientActivity extends AppCompatActivity {
     //~-------------------------------------------------
     public void toSoins(View view) {
         Intent intent = new Intent(this, SoinsPatientsActivity.class);
+        intent.putExtra("NUMSECU", NUMSECU);
+        intent.putExtra("EMAIL", EMAIL);
         startActivity(intent);
 
     }
@@ -171,6 +176,8 @@ public class AccueilPatientActivity extends AppCompatActivity {
     //~-------------------------------------------------
     public void toBiologie(View view) {
         Intent intent = new Intent(this, BiologiePatientActivity.class);
+        intent.putExtra("NUMSECU", NUMSECU);
+        intent.putExtra("EMAIL", EMAIL);
         startActivity(intent);
 
     }
@@ -180,6 +187,8 @@ public class AccueilPatientActivity extends AppCompatActivity {
     //~-------------------------------------------------
     public void toCompteRendus(View view) {
         Intent intent = new Intent(this, CompteRenduActivity.class);
+        intent.putExtra("NUMSECU", NUMSECU);
+        intent.putExtra("EMAIL", EMAIL);
         startActivity(intent);
     }
 
@@ -188,6 +197,8 @@ public class AccueilPatientActivity extends AppCompatActivity {
     //~-------------------------------------------------
     public void toImageriePatient(View view) {
         Intent intent = new Intent(this, ImageriePatientActivity.class);
+        intent.putExtra("NUMSECU", NUMSECU);
+        intent.putExtra("EMAIL", EMAIL);
         startActivity(intent);
     }
 }

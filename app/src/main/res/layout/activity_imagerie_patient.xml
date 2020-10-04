@@ -149,7 +149,8 @@ tools:context=".ImageriePatientActivity">
             android:layout_weight="1"
             app:backgroundTint="#F4F4F4"
             android:background="@drawable/button_menu"
-            android:foreground="@drawable/info"
+            android:foreground="@drawable/chat"
+            android:onClick="toComments"
             android:foregroundGravity="center"
             android:textColorLink="#FFFFFF" />
 
