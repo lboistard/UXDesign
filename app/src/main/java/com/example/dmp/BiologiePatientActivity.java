@@ -13,6 +13,9 @@ import android.widget.SimpleCursorAdapter;
 import com.example.dmp.Database.DBManagerInfosPatient;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
+import java.util.HashMap;
+import java.util.Map;
+
 
 public class BiologiePatientActivity extends AppCompatActivity {
 
@@ -25,11 +28,12 @@ public class BiologiePatientActivity extends AppCompatActivity {
     //~-------------------------------------------------
     //~ Global Variables (intent)
     //~-------------------------------------------------
-    String NUMSECU;
+    String NUMSECU, ID_PATIENT;
     String EMAIL;
     Intent intent;
     Button buttonCommentPatients;
 
+    Map<String,String> valBios = new HashMap<>();
 
     //~-------------------------------------------------
     //~ Window init
@@ -51,8 +55,21 @@ public class BiologiePatientActivity extends AppCompatActivity {
         NUMSECU = intent.getExtras().getString("NUMSECU");
         EMAIL = intent.getExtras().getString("EMAIL");
 
-        //get patient data
-        getBiologiePatientData();
+
+
+        //Ici j'ai mis idinfo parce que c'est l'id qui permet de récuperer les éléments de la DB
+        ID_PATIENT = NUMSECU;
+
+        //La je me connecte à la DB pour récuperer les bails
+        valBios = dbManagerInfosPatient.getBioInfos(ID_PATIENT);
+
+        for (String key : valBios.keySet()) {
+            System.out.println(key + "=" + valBios.get(key));
+        }
+        System.out.println();
+
+
+
 
         //~--------------------------
         //~ click on comments section

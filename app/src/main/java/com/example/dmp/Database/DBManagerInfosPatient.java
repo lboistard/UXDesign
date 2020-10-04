@@ -5,7 +5,13 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
 public class DBManagerInfosPatient {
     //~-------------------------------------------------
@@ -14,6 +20,21 @@ public class DBManagerInfosPatient {
     private DatabaseInfosPatient dbHelperInfos;
     private Context context;
     private SQLiteDatabase databaseInfosPatient;
+   
+    //~-------------------------------------------------
+    //~ Database Query Variables Declaration
+    //~-------------------------------------------------
+    private Map<String, String> infosBio = new HashMap<String, String>();
+    private Map<String, String> infosImageries = new HashMap<String, String>();
+    private Map<String, String> infosCR = new HashMap<String, String>();
+    private Map<String, String> infosTraitements = new HashMap<String, String>();
+    private Map<String, String> infosSoins = new HashMap<String, String>();
+
+    private String biologie_date, biologie_content;
+    private String imagerie_date, imagerie_content;
+    private String compte_rendus_date, compte_rendus_content;
+    private String traitements_date, traitements_content;
+    private String soins_date, soins_content;
 
     //~-------------------------------------------------
     //~ Constructor
@@ -56,20 +77,21 @@ public class DBManagerInfosPatient {
         return cursor;
     }
 
+
     //~-------------------------------------------------
     //~ Get Biologie infos
     //~-------------------------------------------------
-    public String getBioInfos(String patientId){
+    public Map<String, String> getBioInfos(String patientId){
         Cursor cursor = databaseInfosPatient.rawQuery("SELECT biologie_date, biologie_content FROM infosPatients where patientId =" + patientId, null);
 
         if (cursor != null) {
             if (cursor.moveToFirst()) {
                 do {
-                    String biologie_date = cursor.getString(cursor.getColumnIndex("biologie_date"));
-
-                    //patientData.put("numSecu", numS);
-                    return biologie_date;
+                    biologie_date = cursor.getString(cursor.getColumnIndex("biologie_date"));
+                    biologie_content = cursor.getString(cursor.getColumnIndex("biologie_content"));
+                    infosBio.put(biologie_date, biologie_content);
                 } while (cursor.moveToNext());
+                return infosBio;
             }
         }
         return null;
@@ -79,17 +101,17 @@ public class DBManagerInfosPatient {
     //~-------------------------------------------------
     //~ Get Imagerie infos
     //~-------------------------------------------------
-    public String getImagerieInfos(String patientId){
-        Cursor cursor = databaseInfosPatient.rawQuery("SELECT biologie_date, biologie_content FROM infosPatients where patientId =" + patientId, null);
+    public Map<String, String> getImagerieInfos(String patientId){
+        Cursor cursor = databaseInfosPatient.rawQuery("SELECT imagerie_date, imagerie_content FROM infosPatients where patientId =" + patientId, null);
 
         if (cursor != null) {
             if (cursor.moveToFirst()) {
                 do {
-                    String biologie_date = cursor.getString(cursor.getColumnIndex("biologie_date"));
-
-                    //patientData.put("numSecu", numS);
-                    return biologie_date;
+                    imagerie_date = cursor.getString(cursor.getColumnIndex("imagerie_date"));
+                    imagerie_content = cursor.getString(cursor.getColumnIndex("imagerie_content"));
+                    infosImageries.put(imagerie_date, imagerie_content);
                 } while (cursor.moveToNext());
+                return infosImageries;
             }
         }
         return null;
@@ -98,17 +120,16 @@ public class DBManagerInfosPatient {
     //~-------------------------------------------------
     //~ Get Soins infos
     //~-------------------------------------------------
-    public String getSoinsInfos(String patientId){
-        Cursor cursor = databaseInfosPatient.rawQuery("SELECT biologie_date, biologie_content FROM infosPatients where patientId =" + patientId, null);
-
+    public Map<String, String> getSoinsInfos(String patientId){
+        Cursor cursor = databaseInfosPatient.rawQuery("SELECT soins_date, soins_content FROM infosPatients where patientId =" + patientId, null);
         if (cursor != null) {
             if (cursor.moveToFirst()) {
                 do {
-                    String biologie_date = cursor.getString(cursor.getColumnIndex("biologie_date"));
-
-                    //patientData.put("numSecu", numS);
-                    return biologie_date;
+                    soins_date = cursor.getString(cursor.getColumnIndex("soins_date"));
+                    soins_content = cursor.getString(cursor.getColumnIndex("soins_content"));
+                    infosSoins.put(soins_date, soins_content);
                 } while (cursor.moveToNext());
+                return infosSoins;
             }
         }
         return null;
@@ -118,17 +139,17 @@ public class DBManagerInfosPatient {
     //~-------------------------------------------------
     //~ Get Traitements infos
     //~-------------------------------------------------
-    public String getTraitementsInfos(String patientId){
-        Cursor cursor = databaseInfosPatient.rawQuery("SELECT biologie_date, biologie_content FROM infosPatients where patientId =" + patientId, null);
+    public Map<String, String> getTraitementsInfos(String patientId){
+        Cursor cursor = databaseInfosPatient.rawQuery("SELECT traitements_date, traitements_content FROM infosPatients where patientId =" + patientId, null);
 
         if (cursor != null) {
             if (cursor.moveToFirst()) {
                 do {
-                    String biologie_date = cursor.getString(cursor.getColumnIndex("biologie_date"));
-
-                    //patientData.put("numSecu", numS);
-                    return biologie_date;
+                    traitements_date = cursor.getString(cursor.getColumnIndex("traitements_date"));
+                    traitements_content = cursor.getString(cursor.getColumnIndex("traitements_content"));
+                    infosTraitements.put(traitements_date, traitements_content);
                 } while (cursor.moveToNext());
+                return infosTraitements;
             }
         }
         return null;
@@ -137,25 +158,20 @@ public class DBManagerInfosPatient {
     //~-------------------------------------------------
     //~ Get Compte Rendu infos
     //~-------------------------------------------------
-    public String getCompteRendusInfos(String patientId){
+    public Map<String, String> getCompteRendusInfos(String patientId){
         Cursor cursor = databaseInfosPatient.rawQuery("SELECT compte_rendu_date, compte_rendu_content FROM infosPatients where patientId =" + patientId, null);
-
-
-        String compte_rendu_date, compte_rendu_content;
 
         if (cursor != null) {
             if (cursor.moveToFirst()) {
                 do {
-                    compte_rendu_date = cursor.getString(cursor.getColumnIndex("compte_rendu_date"));
-                    compte_rendu_content = cursor.getString(cursor.getColumnIndex("compte_rendu_content"));
-
-                    System.out.print("Compte rendu date : " + cursor.getString(cursor.getColumnIndex("compte_rendu_date")));
-
-
-                    return compte_rendu_content;
+                    compte_rendus_date = cursor.getString(cursor.getColumnIndex("compte_rendu_date"));
+                    compte_rendus_content = cursor.getString(cursor.getColumnIndex("compte_rendu_content"));
+                    infosCR.put(compte_rendus_date, compte_rendus_content);
                 } while (cursor.moveToNext());
+                return infosCR;
             }
         }
         return null;
     }
+
 }

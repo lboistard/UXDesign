@@ -4,21 +4,40 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.SimpleCursorAdapter;
 
+import com.example.dmp.Database.DBManagerInfosPatient;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class ImageriePatientActivity extends AppCompatActivity {
     //~-------------------------------------------------
     //~ Global Variables (intent)
     //~-------------------------------------------------
-    String NUMSECU;
+    String NUMSECU, ID_PATIENT;
     String EMAIL;
     Intent intent;
     Button buttonCommentPatients;
 
+
+    Map<String,String> IMAGERIES_DATAS = new HashMap<>();
+
+    //~-------------------------------------------------
+    //~ Database elements declaration
+    //~-------------------------------------------------
+    private DBManagerInfosPatient dbManagerInfosPatient;
+    private SimpleCursorAdapter adpater;
+
+
+    //~-------------------------------------------------
+    //~ Init window
+    //~-------------------------------------------------
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,9 +45,29 @@ public class ImageriePatientActivity extends AppCompatActivity {
 
         buttonCommentPatients = findViewById(R.id.buttonCommentsPatient);
 
+        //db
+        dbManagerInfosPatient = new DBManagerInfosPatient(this);
+        dbManagerInfosPatient.openDBInfosPatient();
+        Cursor cursor = dbManagerInfosPatient.fetch();
+
+
         intent = getIntent();
         NUMSECU = intent.getExtras().getString("NUMSECU");
         EMAIL = intent.getExtras().getString("EMAIL");
+
+
+        //Ici j'ai mis idinfo parce que c'est l'id qui permet de récuperer les éléments de la DB
+        ID_PATIENT = NUMSECU;
+
+        //La je me connecte à la DB pour récuperer les bails
+        IMAGERIES_DATAS = dbManagerInfosPatient.getImagerieInfos(ID_PATIENT);
+
+        //
+        //C'est dans cette boucle qu'on récupere les values de la database
+        for (String key : IMAGERIES_DATAS.keySet()) {
+            System.out.println(key + "=" + IMAGERIES_DATAS.get(key));
+        }
+
 
         //~--------------------------
         //~ click on comments section

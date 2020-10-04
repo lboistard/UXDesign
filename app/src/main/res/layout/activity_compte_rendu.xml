@@ -45,7 +45,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="90dp"
-            android:textColor="#606060"
+            android:textColor="#515151"
+            app:backgroundTint="#E1E1E1"
             android:text="Télécharger"
             android:background="@drawable/button_download" />
 

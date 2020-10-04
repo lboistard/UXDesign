@@ -107,8 +107,8 @@ public class MainActivity extends AppCompatActivity {
         //If user exist, go to next page
         //if(numReturn != "false"){
         Intent intent = new Intent(MainActivity.this, AccueilPatientActivity.class);
-        intent.putExtra("NUMSECU", "0000");
-        intent.putExtra("EMAIL", "test@gmail.com");
+        intent.putExtra("NUMSECU", "689822974");
+        intent.putExtra("EMAIL", "Lucas.boistard@hotmail.fr");
         startActivity(intent);
        // }
     }
