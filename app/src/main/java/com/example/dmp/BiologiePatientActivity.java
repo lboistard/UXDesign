@@ -70,30 +70,31 @@ public class BiologiePatientActivity extends AppCompatActivity {
         //La je me connecte à la DB pour récuperer les bails (un bail, des baux)
         valBios = dbManagerInfosPatient.getBioInfos(ID_PATIENT);
 
-        int index = 0;
-        for (String key : valBios.keySet()) {
-            TableRow row = new TableRow(this);
+        if (valBios != null){
+            int index = 0;
+            for (String key : valBios.keySet()) {
+                TableRow row = new TableRow(this);
 
-            TextView tv1 = new TextView(this);
-            tv1.setPadding(25, 10, 25, 25);
-            tv1.setText(valBios.get(key));
+                TextView tv1 = new TextView(this);
+                tv1.setPadding(25, 10, 25, 25);
+                tv1.setText(valBios.get(key));
 
-            TextView tv2 = new TextView(this);
-            tv2.setPadding(25, 10, 25, 25);
-            tv2.setGravity(Gravity.RIGHT);
-            tv2.setText(key);
+                TextView tv2 = new TextView(this);
+                tv2.setPadding(25, 10, 25, 25);
+                tv2.setGravity(Gravity.RIGHT);
+                tv2.setText(key);
 
-            if (index % 2 != 0){
-                tv1.setBackgroundColor(Color.parseColor("#e4e4e4"));
-                tv2.setBackgroundColor(Color.parseColor("#e4e4e4"));
+                if (index % 2 != 0){
+                    tv1.setBackgroundColor(Color.parseColor("#e4e4e4"));
+                    tv2.setBackgroundColor(Color.parseColor("#e4e4e4"));
+                }
+
+                row.addView(tv1);
+                row.addView(tv2);
+
+                table_layout.addView(row);
+                index++;
             }
-
-            row.addView(tv1);
-            row.addView(tv2);
-
-            table_layout.addView(row);
-            index++;
-
         }
 
 

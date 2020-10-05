@@ -70,27 +70,27 @@ public class ImageriePatientActivity extends AppCompatActivity {
         //La je me connecte à la DB pour récuperer les bails
         IMAGERIES_DATAS = dbManagerInfosPatient.getImagerieInfos(ID_PATIENT);
 
-        int index = 0;
-        //C'est dans cette boucle qu'on récupere les values de la database
-        for (String key : IMAGERIES_DATAS.keySet()) {
-            TableRow row = new TableRow(this);
+        if(IMAGERIES_DATAS != null){
+            int index = 0;
+            //C'est dans cette boucle qu'on récupere les values de la database
+            for (String key : IMAGERIES_DATAS.keySet()) {
+                TableRow row = new TableRow(this);
 
-            TextView tv1 = new TextView(this);
-            tv1.setPadding(25, 10, 600, 25);
-            System.out.println();
-            if (index != 0) {
-                tv1.setText(IMAGERIES_DATAS.get(key) + " du " + key);
+                TextView tv1 = new TextView(this);
+                tv1.setPadding(25, 10, 600, 25);
+                System.out.println();
+                if (index != 0) {
+                    tv1.setText(IMAGERIES_DATAS.get(key) + " du " + key);
+                }
+
+                if (index % 2 != 0){
+                    tv1.setBackgroundColor(Color.parseColor("#e4e4e4"));
+                }
+
+                row.addView(tv1);
+                table_layout.addView(row);
+                index++;
             }
-
-
-            if (index % 2 != 0){
-                tv1.setBackgroundColor(Color.parseColor("#e4e4e4"));
-            }
-
-            row.addView(tv1);
-
-            table_layout.addView(row);
-            index++;
         }
 
 

@@ -69,55 +69,60 @@ public class SoinsPatientsActivity extends AppCompatActivity {
         SOINS_DATAS = dbManagerInfosPatient.getSoinsInfos(ID_PATIENT);
         TRAITEMENTS_DATAS = dbManagerInfosPatient.getTraitementsInfos(ID_PATIENT);
 
-        int index1 = 0;
-        for (String key : SOINS_DATAS.keySet()) {
-            TableRow row = new TableRow(this);
+        if(SOINS_DATAS !=null){
+            int index1 = 0;
+            for (String key : SOINS_DATAS.keySet()) {
+                TableRow row = new TableRow(this);
 
-            TextView tv1 = new TextView(this);
-            tv1.setPadding(25, 10, 25, 25);
-            tv1.setText(SOINS_DATAS.get(key));
+                TextView tv1 = new TextView(this);
+                tv1.setPadding(25, 10, 25, 25);
+                tv1.setText(SOINS_DATAS.get(key));
 
-            TextView tv2 = new TextView(this);
-            tv2.setPadding(25, 10, 25, 25);
-            tv2.setGravity(Gravity.RIGHT);
-            tv2.setText(key);
+                TextView tv2 = new TextView(this);
+                tv2.setPadding(25, 10, 25, 25);
+                tv2.setGravity(Gravity.RIGHT);
+                tv2.setText(key);
 
-            if (index1 % 2 == 0){
-                tv1.setBackgroundColor(Color.parseColor("#e4e4e4"));
-                tv2.setBackgroundColor(Color.parseColor("#e4e4e4"));
+                if (index1 % 2 == 0){
+                    tv1.setBackgroundColor(Color.parseColor("#e4e4e4"));
+                    tv2.setBackgroundColor(Color.parseColor("#e4e4e4"));
+                }
+
+                row.addView(tv1);
+                row.addView(tv2);
+
+                table_layout1.addView(row);
+                index1++;
             }
-
-            row.addView(tv1);
-            row.addView(tv2);
-
-            table_layout1.addView(row);
-            index1++;
         }
 
-        int index2 = 0;
-        for (String key : TRAITEMENTS_DATAS.keySet()) {
-            TableRow row = new TableRow(this);
+        if(TRAITEMENTS_DATAS != null){
+            int index2 = 0;
+            for (String key : TRAITEMENTS_DATAS.keySet()) {
+                TableRow row = new TableRow(this);
 
-            TextView tv1 = new TextView(this);
-            tv1.setPadding(25, 10, 25, 25);
-            tv1.setText(TRAITEMENTS_DATAS.get(key));
+                TextView tv1 = new TextView(this);
+                tv1.setPadding(25, 10, 25, 25);
+                tv1.setText(TRAITEMENTS_DATAS.get(key));
 
-            TextView tv2 = new TextView(this);
-            tv2.setPadding(25, 10, 25, 25);
-            tv2.setGravity(Gravity.RIGHT);
-            tv2.setText(key);
+                TextView tv2 = new TextView(this);
+                tv2.setPadding(25, 10, 25, 25);
+                tv2.setGravity(Gravity.RIGHT);
+                tv2.setText(key);
 
-            if (index2 % 2 == 0){
-                tv1.setBackgroundColor(Color.parseColor("#e4e4e4"));
-                tv2.setBackgroundColor(Color.parseColor("#e4e4e4"));
+                if (index2 % 2 == 0){
+                    tv1.setBackgroundColor(Color.parseColor("#e4e4e4"));
+                    tv2.setBackgroundColor(Color.parseColor("#e4e4e4"));
+                }
+
+                row.addView(tv1);
+                row.addView(tv2);
+
+                table_layout2.addView(row);
+                index2++;
             }
-
-            row.addView(tv1);
-            row.addView(tv2);
-
-            table_layout2.addView(row);
-            index2++;
         }
+
 
 
         //~--------------------------

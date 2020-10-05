@@ -91,6 +91,14 @@ public class DBManagerInfosPatient {
                     biologie_date = cursor.getString(cursor.getColumnIndex("biologie_date"));
                     biologie_content = cursor.getString(cursor.getColumnIndex("biologie_content"));
                     infosBio.put(biologie_date, biologie_content);
+
+
+                    System.out.println("DEBUG Function =====");
+                    for(String key : infosBio.keySet()){
+                        System.out.println(key);
+                    }
+
+
                 } while (cursor.moveToNext());
                 return infosBio;
             }

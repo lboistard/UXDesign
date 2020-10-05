@@ -105,4 +105,12 @@ public class CommentairesPatientsActivity extends AppCompatActivity {
         intent.putExtra("EMAIL", EMAIL);
         startActivity(intent);
     }
+
+    public void cancelAction(View view) {
+        Intent intent = new Intent(this, AccueilPatientActivity.class);
+        intent.putExtra("NUMSECU", NUMSECU);
+        intent.putExtra("EMAIL", EMAIL);
+        startActivity(intent);
+
+    }
 }

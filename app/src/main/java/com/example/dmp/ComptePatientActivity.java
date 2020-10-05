@@ -84,6 +84,7 @@ public class ComptePatientActivity extends AppCompatActivity {
         EMAIL = intent.getExtras().getString("EMAIL");
         RESPONSE = intent.getExtras().getString("RESPONSE");
 
+        
 
         //afficher le last commment
         dbManagerCommentairesPatient = new DBManagerCommentairesPatient(this);
@@ -91,7 +92,11 @@ public class ComptePatientActivity extends AppCompatActivity {
         Cursor cursor = dbManagerCommentairesPatient.fetch();
         String lastComment = dbManagerCommentairesPatient.getLastComment(NUMSECU);
 
-        textLastComment.setText("Votre dernier commentaire : " + lastComment);
+        if (lastComment == null){
+            textLastComment.setText("Pas de commentaires pour le moment ! Pour en ajoutez un allez dans la section commentaires de l'application.");
+        }else{
+            textLastComment.setText("Votre dernier commentaire : " + lastComment);
+        }
 
 
 
