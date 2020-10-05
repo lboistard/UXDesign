@@ -100,13 +100,56 @@ public class DBManagerPatient {
 	}
 
 
+	String messageUpdate;
+	//~-------------------------------------------------
+	//~ Update patient password
+	//~-------------------------------------------------
+	public String passwordUpdate(String oldPassword, String newPassword, String numSecu){
+
+		//on check si le mdp actuel est good (ca permet de sortir de la fonction zeubi)
+		String passwordToCheck = getPasswordPatient(numSecu);
+		if (oldPassword.equals(passwordToCheck)){
+			Cursor cursor = databasePatient.rawQuery("UPDATE patients SET passwordPatient =" + newPassword + " WHERE numSecuPatient = "+ numSecu , null);
+			if (cursor != null) {
+				if (cursor.moveToFirst()) {
+					do {
+						return "true";
+					} while (cursor.moveToNext());
+				}
+			}
+		}else{
+			messageUpdate = "false";
+			return messageUpdate;
+		}
+
+		return "true";
+	}
+
+
+	//~-------------------------------------------------
+	//~ Find patient password with numsecu
+	//~-------------------------------------------------
+	public String  getPasswordPatient(String numSecu){
+		Cursor cursor = databasePatient.rawQuery("SELECT passwordPatient FROM patients ", null);
+
+		if (cursor != null) {
+			if (cursor.moveToFirst()) {
+				do {
+					String password = cursor.getString(cursor.getColumnIndex("passwordPatient"));
+
+					//patientData.put("numSecu", numS);
+					return password;
+				} while (cursor.moveToNext());
+			}
+		}
+		return null;
+	}
+
+
 	//~-------------------------------------------------
 	//~ Find patient Informations from one param
 	//~-------------------------------------------------
 	public String  getPatientInfos(String numSecu){
-
-
-
 		Cursor cursor = databasePatient.rawQuery("SELECT emailPatient FROM patients ", null);
 
 		if (cursor != null) {

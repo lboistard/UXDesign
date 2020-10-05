@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.example.dmp.Dialogs.ChangePasswordDialog;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+import com.google.android.material.snackbar.Snackbar;
 
 public class ComptePatientActivity extends AppCompatActivity {
 
@@ -32,6 +33,7 @@ public class ComptePatientActivity extends AppCompatActivity {
     //~-------------------------------------------------
     String NUMSECU;
     String EMAIL;
+    String RESPONSE = "";
     Intent intent;
 
 
@@ -67,15 +69,17 @@ public class ComptePatientActivity extends AppCompatActivity {
        inputNumSecu.setEnabled(false);
 
 
+
         intent = getIntent();
         NUMSECU = intent.getExtras().getString("NUMSECU");
         EMAIL = intent.getExtras().getString("EMAIL");
+        RESPONSE = intent.getExtras().getString("RESPONSE");
 
+        //ajoute snackbar si update ok
         inputNumSecu.setText(NUMSECU);
         inputEmailPatient.setText(EMAIL);
+
         //ask db for values
-
-
         buttonComments.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
