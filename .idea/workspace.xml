@@ -11,16 +11,17 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74cfe643-94fa-4396-b8d9-118c732f15c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/easyaccordion/easyaccordion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/easyaccordion/easyaccordion.iml" afterDir="false" />
+    <list default="true" id="74cfe643-94fa-4396-b8d9-118c732f15c5" name="Default Changelist" comment="add database query + change compteRendu layout">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/BiologiePatientActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/BiologiePatientActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/Database/DBManagerInfosPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/Database/DBManagerInfosPatient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/ImageriePatientActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/ImageriePatientActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/SoinsPatientsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/SoinsPatientsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_compte_rendu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_compte_rendu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/CommentairesPatientsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/CommentairesPatientsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_commentaires_patients.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_commentaires_patients.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -551,7 +552,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601819274092</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="add database query + change compteRendu layout">
+      <created>1601829280992</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1601829280992</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -568,7 +576,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit for habibi" />
     <MESSAGE value="add logo" />
     <MESSAGE value="add soins patients" />
     <MESSAGE value="update soins patients" />
@@ -593,7 +600,8 @@
     <MESSAGE value="add comment section" />
     <MESSAGE value="push pour habibi" />
     <MESSAGE value="drawables for habibi" />
-    <option name="LAST_COMMIT_MESSAGE" value="drawables for habibi" />
+    <MESSAGE value="add database query + change compteRendu layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="add database query + change compteRendu layout" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="71" key="#DMP" timestamp="1599816404093">
@@ -661,10 +669,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="816" y="332" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600345817759" />
-    <state x="0" y="12" width="1471" height="972" key="CommitChangelistDialog2" timestamp="1601819273599">
+    <state x="0" y="25" width="1471" height="972" key="CommitChangelistDialog2" timestamp="1601829280529">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="12" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1601819273599" />
+    <state x="0" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1601829280529" />
     <state x="449" y="14" width="1471" height="972" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601311059656" />
     <state x="339" y="36" key="CommitChangelistDialog2/0.25.1440.822@0.25.1440.822" timestamp="1600185316221" />
     <state x="120" y="131" width="1152" height="720" key="DiffContextDialog" timestamp="1601825102542">
@@ -728,10 +736,10 @@
     </state>
     <state x="478" y="130" key="VCS.ChangeListViewerDialog/0.0.1440.900@0.0.1440.900" timestamp="1600418967810" />
     <state x="478" y="144" key="VCS.ChangeListViewerDialog/0.25.1440.822@0.25.1440.822" timestamp="1600370997309" />
-    <state x="320" y="162" key="Vcs.Push.Dialog.v2" timestamp="1601819279599">
+    <state x="320" y="162" key="Vcs.Push.Dialog.v2" timestamp="1601829287283">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="162" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601819279599" />
+    <state x="320" y="162" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601829287283" />
     <state x="427" y="187" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601307370414" />
     <state x="320" y="173" key="Vcs.Push.Dialog.v2/0.25.1440.822@0.25.1440.822" timestamp="1600185322301" />
     <state x="776" y="297" key="chooseDestDirectoryDialog" timestamp="1601308928404">
@@ -746,14 +754,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1440.900@0.0.1440.900" timestamp="1600763258296" />
-    <state x="500" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601824961088">
+    <state x="500" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601896570079">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="500" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1601824961088" />
-    <state x="409" y="224" key="git4idea.merge.GitPullDialog" timestamp="1601825120375">
+    <state x="500" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1601896570079" />
+    <state x="409" y="224" key="git4idea.merge.GitPullDialog" timestamp="1601896578415">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="409" y="224" key="git4idea.merge.GitPullDialog/0.0.1440.900@0.0.1440.900" timestamp="1601825120375" />
+    <state x="409" y="224" key="git4idea.merge.GitPullDialog/0.0.1440.900@0.0.1440.900" timestamp="1601896578415" />
     <state x="409" y="230" key="git4idea.merge.GitPullDialog/0.25.1440.822@0.25.1440.822" timestamp="1600172571537" />
     <state x="339" y="287" key="git4idea.ui.GitUnstashDialog" timestamp="1600370998305">
       <screen x="0" y="25" width="1440" height="822" />

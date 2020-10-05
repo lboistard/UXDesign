@@ -5,8 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class CommentairesPatientsActivity extends AppCompatActivity {
+
+    EditText editTextInstructions;
+
+
+    public void initComponents(){
+        editTextInstructions = findViewById(R.id.editTextInstructions);
+    }
+
 
     //~-------------------------------------------------
     //~ Go to patient Comments Section
@@ -15,6 +24,10 @@ public class CommentairesPatientsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_commentaires_patients);
+
+        initComponents();
+
+        editTextInstructions.setEnabled(false);
     }
 
     //~-------------------------------------------------
