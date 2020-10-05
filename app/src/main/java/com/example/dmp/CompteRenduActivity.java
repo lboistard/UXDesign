@@ -85,4 +85,5 @@ public class CompteRenduActivity extends AppCompatActivity {
                 Intent intent = new Intent(this, CommentairesPatientsActivity.class);
                 startActivity(intent);
         }
+
 }

@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -44,9 +45,9 @@ public class ComptePatientActivity extends AppCompatActivity {
         textComptePatient = (TextView)findViewById(R.id.textComptePatient);
         textInfosPatient = (TextView)findViewById(R.id.textInfosPatient);
         textNumSecuPatient = (TextView)findViewById(R.id.textNumSecuPatient);
-        inputNumSecu = (TextView)findViewById(R.id.textNumSecu);
+        inputNumSecu = (EditText)findViewById(R.id.inputNumSecu);
         textEmailPatient = (TextView)findViewById(R.id.textEmailPatient);
-        inputEmailPatient = (TextView)findViewById(R.id.inputEmailPatient);
+        inputEmailPatient = (EditText)findViewById(R.id.inputEmailPatient);
         textPasswordPatientQuestion = (TextView)findViewById(R.id.textPasswordPatientQuestion);
         logoComptePatient = (ImageView)findViewById(R.id.logoComptePatient);
         buttonComments = (Button) findViewById(R.id.buttonComments);
@@ -60,6 +61,11 @@ public class ComptePatientActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_compte_patient);
         initComponents();
+
+        //disable  edition of input patient
+       inputEmailPatient.setEnabled(false);
+       inputNumSecu.setEnabled(false);
+
 
         intent = getIntent();
         NUMSECU = intent.getExtras().getString("NUMSECU");
