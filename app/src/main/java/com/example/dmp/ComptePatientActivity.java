@@ -136,6 +136,8 @@ public class ComptePatientActivity extends AppCompatActivity {
 
     public void toPassword(){
         Intent intent = new Intent(this, PasswordChange.class);
+        intent.putExtra("NUMSECU", NUMSECU);
+        intent.putExtra("EMAIL", EMAIL);
         startActivity(intent);
     }
 

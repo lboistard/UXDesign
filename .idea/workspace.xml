@@ -16,17 +16,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/ComptePatientActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/ComptePatientActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/CompteRenduActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/CompteRenduActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_compte_patient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_compte_patient.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_compte_rendu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_compte_rendu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/PasswordChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/PasswordChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_password_change_patient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_password_change_patient.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,13 +216,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593694863853</updated>
-    </task>
-    <task id="LOCAL-00002" summary="rename components in res/drawable/activity_create_account">
-      <created>1593779742472</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1593779742472</updated>
     </task>
     <task id="LOCAL-00003" summary="init components in the createAccount class">
       <created>1593780100075</created>
@@ -564,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601896984791</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="design corrections">
+      <created>1601897290094</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1601897290094</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -581,7 +577,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add soins patients" />
     <MESSAGE value="update soins patients" />
     <MESSAGE value="bug correction : closed database after every action" />
     <MESSAGE value="add account managament for patient" />
@@ -606,7 +601,8 @@
     <MESSAGE value="drawables for habibi" />
     <MESSAGE value="add database query + change compteRendu layout" />
     <MESSAGE value="edit text in CommentairesPatientsActivity is not editable now" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit text in CommentairesPatientsActivity is not editable now" />
+    <MESSAGE value="design corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="design corrections" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="71" key="#DMP" timestamp="1599816404093">
@@ -674,10 +670,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="816" y="332" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600345817759" />
-    <state x="0" y="25" width="1471" height="972" key="CommitChangelistDialog2" timestamp="1601896984278">
+    <state x="0" y="25" width="1471" height="972" key="CommitChangelistDialog2" timestamp="1601897289569">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1601896984278" />
+    <state x="0" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1601897289569" />
     <state x="449" y="14" width="1471" height="972" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601311059656" />
     <state x="339" y="36" key="CommitChangelistDialog2/0.25.1440.822@0.25.1440.822" timestamp="1600185316221" />
     <state x="120" y="131" width="1152" height="720" key="DiffContextDialog" timestamp="1601825102542">
@@ -693,28 +689,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="259" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600364260725" />
-    <state width="1398" height="360" key="GridCell.Tab.0.bottom" timestamp="1601829232850">
+    <state width="699" height="360" key="GridCell.Tab.0.bottom" timestamp="1601897544912">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="360" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601829232850" />
+    <state width="699" height="360" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601897544912" />
     <state width="1877" height="84" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601308529649" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.25.1440.822@0.25.1440.822" timestamp="1600430345661" />
-    <state width="1398" height="360" key="GridCell.Tab.0.center" timestamp="1601829232849">
+    <state width="699" height="360" key="GridCell.Tab.0.center" timestamp="1601897544910">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="360" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601829232849" />
+    <state width="699" height="360" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601897544910" />
     <state width="1877" height="84" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601308529649" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.25.1440.822@0.25.1440.822" timestamp="1600430345659" />
-    <state width="1398" height="360" key="GridCell.Tab.0.left" timestamp="1601829232847">
+    <state width="699" height="360" key="GridCell.Tab.0.left" timestamp="1601897544910">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="360" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601829232847" />
+    <state width="699" height="360" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601897544910" />
     <state width="1877" height="84" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601308529649" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.25.1440.822@0.25.1440.822" timestamp="1600430345658" />
-    <state width="1398" height="360" key="GridCell.Tab.0.right" timestamp="1601829232850">
+    <state width="699" height="360" key="GridCell.Tab.0.right" timestamp="1601897544911">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="360" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601829232850" />
+    <state width="699" height="360" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601897544911" />
     <state width="1877" height="84" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601308529649" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.25.1440.822@0.25.1440.822" timestamp="1600430345660" />
     <state x="308" y="173" key="IDE.errors.dialog" timestamp="1601469651712">
