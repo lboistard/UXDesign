@@ -189,21 +189,21 @@
             android:textColor="#292424" />
 
         <TextView
-            android:id="@+id/textRep"
+            android:id="@+id/textLastComment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/muli_light_italic"
-            android:text="Réponse à votre commmentaire : Lorem ipsum dolor sit amet, consectetur adipisicing"
+            android:text="Votre dernier commmentaire : Lorem ipsum dolor sit amet, consectetur adipisicing"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/textComment"
+            android:id="@+id/repComment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/muli_light_italic"
-            android:text="Votre commmentaire : Lorem ipsum dolor sit amet, consectetur adipisicing"
+            android:text="Pas de réponse pour le moment"
             android:textSize="18sp" />
 
     </LinearLayout>

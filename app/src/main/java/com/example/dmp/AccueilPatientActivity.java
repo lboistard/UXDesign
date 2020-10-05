@@ -138,6 +138,8 @@ public class AccueilPatientActivity extends AppCompatActivity {
     //~-------------------------------------------------
     public void toComments(){
         Intent intent = new Intent(this, CommentairesPatientsActivity.class);
+        intent.putExtra("NUMSECU", NUMSECU);
+        intent.putExtra("EMAIL", EMAIL);
         startActivity(intent);
     }
 

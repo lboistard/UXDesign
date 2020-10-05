@@ -12,6 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74cfe643-94fa-4396-b8d9-118c732f15c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/Database/DBManagerCommentairesPatient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/Database/DatabaseCommentairesPatient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -22,16 +24,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/easyaccordion/easyaccordion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/easyaccordion/easyaccordion.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/AccueilPatientActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/AccueilPatientActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/CommentairesPatientsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/CommentairesPatientsActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/ComptePatientActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/ComptePatientActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/Database/DBManagerPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/Database/DBManagerPatient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/PasswordChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/PasswordChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_password_change_patient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_password_change_patient.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/Database/DBManagerInfosPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/Database/DBManagerInfosPatient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dmp/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_commentaires_patients.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_commentaires_patients.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_compte_patient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_compte_patient.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,12 +97,12 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="46896a61" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-09-18T09:21:14.480Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-10-05T16:39:04.680Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../Library/Android/sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="last_opened_file_path" value="D:/" />
-    <property name="memory.settings.postsync.last.time.stamp" value="1601819276439" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1601911663306" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -225,13 +227,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593694863853</updated>
-    </task>
-    <task id="LOCAL-00004" summary="add database creation for user">
-      <created>1593781949628</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1593781949628</updated>
     </task>
     <task id="LOCAL-00005" summary="create User package and Patient class">
       <created>1594044169062</created>
@@ -569,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601897595436</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="password update + snackbar if false">
+      <created>1601904269698</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1601904269698</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -586,7 +588,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bug correction : closed database after every action" />
     <MESSAGE value="add account managament for patient" />
     <MESSAGE value="add compte patient layout" />
     <MESSAGE value="j'ai fais pleins de trucs je sais plus quoi mdrrr" />
@@ -611,7 +612,8 @@
     <MESSAGE value="edit text in CommentairesPatientsActivity is not editable now" />
     <MESSAGE value="design corrections" />
     <MESSAGE value="add intent extras for PasswordChange.class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add intent extras for PasswordChange.class" />
+    <MESSAGE value="password update + snackbar if false" />
+    <option name="LAST_COMMIT_MESSAGE" value="password update + snackbar if false" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="71" key="#DMP" timestamp="1599816404093">
@@ -643,10 +645,10 @@
     <state x="428" y="239" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1600689738014" />
     <state x="571" y="276" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600361638114" />
     <state x="428" y="243" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.822@0.25.1440.822" timestamp="1600173280724" />
-    <state x="533" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1601730434912">
+    <state x="533" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1601912451773">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1601730434912" />
+    <state x="533" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1601912451773" />
     <state x="711" y="187" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600363302177" />
     <state x="408" y="168" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600251333944">
       <screen x="0" y="25" width="1440" height="822" />
@@ -679,10 +681,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="816" y="332" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600345817759" />
-    <state x="0" y="25" width="1471" height="972" key="CommitChangelistDialog2" timestamp="1601897594943">
+    <state x="0" y="25" width="1471" height="972" key="CommitChangelistDialog2" timestamp="1601904268883">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1601897594943" />
+    <state x="0" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1601904268883" />
     <state x="449" y="14" width="1471" height="972" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601311059656" />
     <state x="339" y="36" key="CommitChangelistDialog2/0.25.1440.822@0.25.1440.822" timestamp="1600185316221" />
     <state x="120" y="131" width="1152" height="720" key="DiffContextDialog" timestamp="1601825102542">
@@ -698,30 +700,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="259" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600364260725" />
-    <state width="1398" height="360" key="GridCell.Tab.0.bottom" timestamp="1601904249376">
+    <state width="1398" height="148" key="GridCell.Tab.0.bottom" timestamp="1601915332799">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="360" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601904249376" />
+    <state width="1398" height="148" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601915332799" />
     <state width="1877" height="84" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601308529649" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.25.1440.822@0.25.1440.822" timestamp="1600430345661" />
-    <state width="1398" height="360" key="GridCell.Tab.0.center" timestamp="1601904249375">
+    <state width="1398" height="148" key="GridCell.Tab.0.bottom/0.25.1440.825@0.25.1440.825" timestamp="1601913486708" />
+    <state width="1398" height="148" key="GridCell.Tab.0.center" timestamp="1601915332798">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="360" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601904249375" />
+    <state width="1398" height="148" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601915332798" />
     <state width="1877" height="84" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601308529649" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.25.1440.822@0.25.1440.822" timestamp="1600430345659" />
-    <state width="1398" height="360" key="GridCell.Tab.0.left" timestamp="1601904249375">
+    <state width="1398" height="148" key="GridCell.Tab.0.center/0.25.1440.825@0.25.1440.825" timestamp="1601913486705" />
+    <state width="1398" height="148" key="GridCell.Tab.0.left" timestamp="1601915332797">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="360" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601904249375" />
+    <state width="1398" height="148" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601915332797" />
     <state width="1877" height="84" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601308529649" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.25.1440.822@0.25.1440.822" timestamp="1600430345658" />
-    <state width="1398" height="360" key="GridCell.Tab.0.right" timestamp="1601904249376">
+    <state width="1398" height="148" key="GridCell.Tab.0.left/0.25.1440.825@0.25.1440.825" timestamp="1601913486704" />
+    <state width="1398" height="148" key="GridCell.Tab.0.right" timestamp="1601915332798">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="360" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601904249376" />
+    <state width="1398" height="148" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601915332798" />
     <state width="1877" height="84" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601308529649" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.25.1440.822@0.25.1440.822" timestamp="1600430345660" />
+    <state width="1398" height="148" key="GridCell.Tab.0.right/0.25.1440.825@0.25.1440.825" timestamp="1601913486706" />
     <state x="308" y="173" key="IDE.errors.dialog" timestamp="1601469651712">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -746,10 +752,10 @@
     </state>
     <state x="478" y="130" key="VCS.ChangeListViewerDialog/0.0.1440.900@0.0.1440.900" timestamp="1600418967810" />
     <state x="478" y="144" key="VCS.ChangeListViewerDialog/0.25.1440.822@0.25.1440.822" timestamp="1600370997309" />
-    <state x="320" y="162" key="Vcs.Push.Dialog.v2" timestamp="1601829287283">
+    <state x="320" y="162" key="Vcs.Push.Dialog.v2" timestamp="1601904292366">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="162" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601829287283" />
+    <state x="320" y="162" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601904292366" />
     <state x="427" y="187" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601307370414" />
     <state x="320" y="173" key="Vcs.Push.Dialog.v2/0.25.1440.822@0.25.1440.822" timestamp="1600185322301" />
     <state x="776" y="297" key="chooseDestDirectoryDialog" timestamp="1601308928404">
@@ -764,10 +770,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1440.900@0.0.1440.900" timestamp="1600763258296" />
-    <state x="500" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601897906670">
+    <state x="500" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601911688898">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="500" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1601897906670" />
+    <state x="500" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1601911688898" />
     <state x="409" y="224" key="git4idea.merge.GitPullDialog" timestamp="1601896578415">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

@@ -74,7 +74,7 @@ tools:context=".MainActivity">
         android:ems="10"
         android:fontFamily="@font/muli_extralight"
         android:hint="N° Sécurité Sociale"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:textColor="#7A121212" />
 
     <Button
