@@ -5,10 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SimpleCursorAdapter;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
 
 import com.example.dmp.Database.DBManagerInfosPatient;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
@@ -32,6 +37,7 @@ public class BiologiePatientActivity extends AppCompatActivity {
     String EMAIL;
     Intent intent;
     Button buttonCommentPatients;
+    TableLayout table_layout;
 
     Map<String,String> valBios = new HashMap<>();
 
@@ -44,6 +50,7 @@ public class BiologiePatientActivity extends AppCompatActivity {
         setContentView(R.layout.activity_biologie_patient);
 
         buttonCommentPatients = findViewById(R.id.buttonCommentsPatient);
+        table_layout = findViewById(R.id.tableLayout1);
 
         //db
         dbManagerInfosPatient = new DBManagerInfosPatient(this);
@@ -60,15 +67,34 @@ public class BiologiePatientActivity extends AppCompatActivity {
         //Ici j'ai mis idinfo parce que c'est l'id qui permet de récuperer les éléments de la DB
         ID_PATIENT = NUMSECU;
 
-        //La je me connecte à la DB pour récuperer les bails
+        //La je me connecte à la DB pour récuperer les bails (un bail, des baux)
         valBios = dbManagerInfosPatient.getBioInfos(ID_PATIENT);
 
+        int index = 0;
         for (String key : valBios.keySet()) {
-            System.out.println(key + "=" + valBios.get(key));
+            TableRow row = new TableRow(this);
+
+            TextView tv1 = new TextView(this);
+            tv1.setPadding(25, 10, 25, 25);
+            tv1.setText(valBios.get(key));
+
+            TextView tv2 = new TextView(this);
+            tv2.setPadding(25, 10, 25, 25);
+            tv2.setGravity(Gravity.RIGHT);
+            tv2.setText(key);
+
+            if (index % 2 != 0){
+                tv1.setBackgroundColor(Color.parseColor("#e4e4e4"));
+                tv2.setBackgroundColor(Color.parseColor("#e4e4e4"));
+            }
+
+            row.addView(tv1);
+            row.addView(tv2);
+
+            table_layout.addView(row);
+            index++;
+
         }
-        System.out.println();
-
-
 
 
         //~--------------------------

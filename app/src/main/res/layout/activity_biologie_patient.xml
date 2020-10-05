@@ -20,6 +20,7 @@
         android:textSize="35sp" />
 
     <TableLayout
+        android:id="@+id/tableLayout1"
         android:layout_width="384dp"
         android:layout_height="566dp"
         android:layout_alignParentTop="true"
@@ -31,52 +32,6 @@
         tools:layout_editor_absoluteX="40dp"
         tools:layout_editor_absoluteY="383dp">
 
-        <TableRow>
-
-            <TextView
-                android:layout_column="1"
-                android:background="#E4E4E4"
-                android:padding="3dip"
-                android:text="Rendez-vous 19/04/20" />
-
-            <TextView
-                android:background="#FFE4E4E4"
-                android:gravity="right"
-                android:padding="3dip"
-                android:text="Cardiologue " />
-        </TableRow>
-
-        <TableRow>
-
-            <TextView
-                android:layout_column="1"
-                android:backgroundTint="#46BFBFBF"
-                android:padding="3dip"
-                android:text="Bilan sanguin du 23/03/20" />
-
-            <TextView
-                android:gravity="right"
-                android:padding="3dip"
-                android:text="Laboratoire" />
-        </TableRow>
-
-        <TableRow>
-
-            <TextView
-                android:layout_column="1"
-                android:background="#FFE4E4E4"
-                android:padding="3dip"
-                android:text="Rendez-vous du 17/03/20 " />
-
-            <TextView
-                android:background="#FFE4E4E4"
-                android:gravity="right"
-                android:padding="3dip"
-                android:text="Cardiologue " />
-        </TableRow>
-
-
-        <TableRow />
     </TableLayout>
 
 

@@ -5,10 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SimpleCursorAdapter;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
 
 import com.example.dmp.Database.DBManagerInfosPatient;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
@@ -24,6 +29,7 @@ public class ImageriePatientActivity extends AppCompatActivity {
     String EMAIL;
     Intent intent;
     Button buttonCommentPatients;
+    TableLayout table_layout;
 
 
     Map<String,String> IMAGERIES_DATAS = new HashMap<>();
@@ -43,7 +49,9 @@ public class ImageriePatientActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_imagerie_patient);
 
+        // Declaration des elements
         buttonCommentPatients = findViewById(R.id.buttonCommentsPatient);
+        table_layout = findViewById(R.id.tableLayout1);
 
         //db
         dbManagerInfosPatient = new DBManagerInfosPatient(this);
@@ -62,10 +70,27 @@ public class ImageriePatientActivity extends AppCompatActivity {
         //La je me connecte à la DB pour récuperer les bails
         IMAGERIES_DATAS = dbManagerInfosPatient.getImagerieInfos(ID_PATIENT);
 
-        //
+        int index = 0;
         //C'est dans cette boucle qu'on récupere les values de la database
         for (String key : IMAGERIES_DATAS.keySet()) {
-            System.out.println(key + "=" + IMAGERIES_DATAS.get(key));
+            TableRow row = new TableRow(this);
+
+            TextView tv1 = new TextView(this);
+            tv1.setPadding(25, 10, 600, 25);
+            System.out.println();
+            if (index != 0) {
+                tv1.setText(IMAGERIES_DATAS.get(key) + " du " + key);
+            }
+
+
+            if (index % 2 != 0){
+                tv1.setBackgroundColor(Color.parseColor("#e4e4e4"));
+            }
+
+            row.addView(tv1);
+
+            table_layout.addView(row);
+            index++;
         }
 
 
